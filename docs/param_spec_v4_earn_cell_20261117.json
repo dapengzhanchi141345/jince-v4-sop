@@ -1,0 +1,27 @@
+{
+  "spec_id": "param_spec_v4_earn_cell_20261117",
+  "ts": "2026-11-17 20:2x BJT",
+  "authority": "李令'全部按最赚钱的方案执行+深度记忆+找专人负责参数'",
+  "owner": "参数官(param-officer, 专职, 每30min哨 jince_param_officer.py)",
+  "cells": {
+    "BTCUSD": {"side": "sell", "sl_mult_atr30": 0.8, "tp_mult_r": 3.0, "giveback": 0.6, "ref_sl_pts": 255.7},
+    "ETHUSD": {"side": "sell", "sl_mult_atr30": 0.8, "tp_mult_r": 3.0, "giveback": 0.6, "ref_sl_pts": 7.8, "gb15_watch": "rd工单sl_spec_v2_exit_layer未验暂不启用"},
+    "SOLUSD": {"side": "sell", "sl_mult_atr30": 0.8, "tp_mult_r": 3.0, "giveback": 0.6, "ref_sl_pts": 0.38},
+    "others": "参数表现值不动(无过线格)"
+  },
+  "rules": {
+    "vol_lot": 0.01,
+    "risk_cap": "撤(李令11-17)",
+    "redline_h": 12,
+    "forward_samples_needed": 30,
+    "oos_gate": "⑥线攒满翻闸(chief裁定)",
+    "param_writer": "参数官=参数表唯一写者; 哨脚本常量=执行岗; 引擎代码=研发岗; 裁定翻闸=chief/L5",
+    "audit_cycle_min": 30
+  },
+  "decommissioned": [
+    "进化宽参 sl4.5/tp7.0 (OOS全线亏损)",
+    "亏损放大/结构极值SL (深优REJECT)",
+    "1.5×ATR15中间版 R=12.1/353.8 (被赚钱格取代)",
+    "GBP 3.7pip无锚SL (14min被扫)"
+  ]
+}
