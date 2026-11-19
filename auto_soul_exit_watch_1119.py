@@ -59,6 +59,27 @@ def main():
             else:
                 label = f"未知原因({reason})"
             line = f"[出场反馈] {v['sym']} 单{t} 进{entry} 出{close_price} {label} 盈亏{pnl}"
+            # R10: 平仓必留痕(验尸/进化材料) + 红线登记作废
+            with open(os.path.join(BASE, "order_lifecycle.jsonl"), "a", encoding="utf-8") as fh:
+                fh.write(json.dumps({"ev": "close", "ts": dt.datetime.now().isoformat(), "sym": v["sym"], "ticket": t,
+                    "close_price": close_price, "pnl": pnl, "cause": label, "magic": MAGIC,
+                    "actor": "出场反馈哨(R10全平仓留痕)"}, ensure_ascii=False) + "\n")
+            try:
+                regf2 = os.path.join(BASE, "redline_registry.jsonl")
+                if os.path.exists(regf2):
+                    rr2 = [json.loads(x) for x in open(regf2, encoding="utf-8") if x.strip()]
+                    ch = False
+                    for r2 in rr2:
+                        if str(r2.get("ticket")) == t and not r2.get("handled"):
+                            r2["handled"] = True; r2["handled_ts"] = dt.datetime.now().isoformat()
+                            r2["note"] = "已出场, 红线作废"
+                            ch = True
+                    if ch:
+                        with open(regf2, "w", encoding="utf-8") as fh2:
+                            for r2 in rr2:
+                                fh2.write(json.dumps(r2, ensure_ascii=False) + "\n")
+            except Exception:
+                pass
             if profit_side:
                 # 立即再进场: 重扫灵魂门, 同向信号仍有效且非冻结=当场市价再进(0.01同格)
                 p2 = subprocess.run([os.environ.get("JINCE_VENV", "D:/jince_sass/.venv/Scripts/python.exe"),
@@ -90,12 +111,17 @@ def main():
                 if alive and not frozen and not any(c["sym"] == v["sym"] for c in cur.values()):
                     sym = v["sym"]
                     cell = cells.get(sym, default)
-                    import numpy as np
-                    m = np.load(os.path.join(ROOT, "data", "tf_cache", f"{sym}_M30.npz"))
-                    h, l, c3 = m["h"], m["l"], m["c"]
-                    pc3 = np.concatenate(([c3[0]], c3[:-1]))
-                    tr = np.maximum(h - l, np.maximum(np.abs(h - pc3), np.abs(l - pc3)))
-                    R = round(cell["sl_mult"] * float(tr[-15:].mean()), 6)
+                    try:
+                        import numpy as np
+                        m = np.load(os.path.join(ROOT, "data", "tf_cache", f"{sym}_M30.npz"))
+                        h, l, c3 = m["h"], m["l"], m["c"]
+                        pc3 = np.concatenate(([c3[0]], c3[:-1]))
+                        tr = np.maximum(h - l, np.maximum(np.abs(h - pc3), np.abs(l - pc3)))
+                        R = round(cell["sl_mult"] * float(tr[-15:].mean()), 6)
+                    except Exception as ex:
+                        line += f" | 再进场跳过: 数据缺失({ex}) (巡市哨下拍覆盖)"
+                        reports.append(line)
+                        continue
                     tx = mt5.symbol_info_tick(sym)
                     _t1 = tx.time
                     time.sleep(3)

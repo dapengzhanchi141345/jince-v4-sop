@@ -68,6 +68,8 @@ def main():
         out = (p.stdout or "").strip()
         for r in due:
             r["handled"] = True; r["handled_ts"] = now.isoformat()
+        # R6 清理: 已处理且超过24h的登记项丢弃, 防文件膨胀
+        regs = [r for r in regs if not (r.get("handled") and (now - dt.datetime.fromisoformat(r.get("handled_ts", r.get("ts", now.isoformat())))) < dt.timedelta(hours=24))]
         with open(reg_f, "w", encoding="utf-8") as f:
             for r in regs:
                 f.write(json.dumps(r, ensure_ascii=False) + "\n")
@@ -118,6 +120,16 @@ def main():
             continue  # D4 数据尾禁入
         cell = cells.get(sym, default)
         R = round(cell["sl_mult"] * atr30(sym), 6)
+        # R9 闸: R点距 < 4×最小点差 = 点差磨平循环, 跳过(验尸岗材料)
+        si0 = mt5.symbol_info(sym)
+        if si0 and si0.point and si0.trade_tick_size:
+            R_pts = R / si0.point
+            min_spread_pts = max(si0.spread, si0.trade_tick_size / si0.point)
+            if R_pts < 4 * min_spread_pts:
+                with open(os.path.join(BASE, "task_ledger.jsonl"), "a", encoding="utf-8") as f:
+                    f.write(json.dumps({"ts": dt.datetime.now().isoformat(), "by": "auto_soul_sweep",
+                        "task": f"{sym} R={R_pts:.1f}点 < 4×点差{min_spread_pts:.1f}点, 跳过(防磨平)", "live": True}, ensure_ascii=False) + "\n")
+                continue
         t = mt5.symbol_info_tick(sym)
         if not t:
             continue
