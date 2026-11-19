@@ -1,0 +1,18 @@
+{
+ "note": "自动巡市哨分品种开单格(12轮战役top1+赚钱格): sl_mult×ATR30 / tp_mult×R, 0.01手攒样级. BTC/ETH/SOL=spec_v4赚钱格; 其余=12轮战役30d top1(WATCH前向攒样, 每单=进化样本). 默认=1.0/3.0",
+ "default": {"sl_mult": 1.0, "tp_mult": 3.0},
+ "cells": {
+  "BTCUSD":  {"sl_mult": 0.8, "tp_mult": 3.0, "src": "spec_v4赚钱格3/6"},
+  "ETHUSD":  {"sl_mult": 0.8, "tp_mult": 3.0, "src": "spec_v4赚钱格3/6"},
+  "SOLUSD":  {"sl_mult": 0.8, "tp_mult": 3.0, "src": "spec_v4赚钱格3/6"},
+  "XAUUSD":  {"sl_mult": 0.9, "tp_mult": 3.75, "src": "12轮战役top1(3/6, 全场最强)"},
+  "KSMUSD":  {"sl_mult": 0.8, "tp_mult": 3.0, "src": "12轮战役top1(2/6)"},
+  "LTCUSD":  {"sl_mult": 0.5, "tp_mult": 2.25, "src": "12轮战役top1(2/6, OOS双正)"},
+  "BNBUSD":  {"sl_mult": 0.6, "tp_mult": 4.25, "src": "12轮战役top1(2/6)"},
+  "EURUSD":  {"sl_mult": 0.5, "tp_mult": 3.75, "src": "12轮战役top1(2/6)"},
+  "USDJPY":  {"sl_mult": 0.4, "tp_mult": 3.5, "src": "12轮战役top1(2/6)"},
+  "XRPUSD":  {"sl_mult": 1.0, "tp_mult": 2.0, "src": "12轮战役top1(2/6)"}
+ },
+ "max_open_per_beat": 2,
+ "day_pos_guard": {"buy_max": 0.97, "sell_min": 0.03}
+}
