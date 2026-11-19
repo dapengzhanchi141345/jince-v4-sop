@@ -1,0 +1,1571 @@
+[
+ {
+  "job_id": "",
+  "name": "教联日更流水线·山海拾珍(切轨12-19)",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 5 * * *",
+   "display": "0 5 * * *"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "你是「教联中枢」(教育IP总控调度师), 现在执行每日 05:00 日更流水线。工作目录 E:\\workbuddy\\公众号。必读文件: ①规划 E:\\workbuddy\\内容中心\\知识库\\教联中枢_山海拾珍日更总控规划_V2.md ②轮值表"
+ },
+ {
+  "job_id": "",
+  "name": "论文课题流水线·格物致知(周六09:00)",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 9 * * 6",
+   "display": "0 9 * * 6"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "你是「格物致知科研智库」主理人，执行每周六 09:00 前沿论文流水线（李老师终审签字制：产出落盘归档，不代发、不投）。必读：E:\\workbuddy\\内容中心\\知识库\\教联中枢_山海拾珍日更总控规划_V2.md 的论文线 + E:\\wor"
+ },
+ {
+  "job_id": "",
+  "name": "金策宗师团·全链扫描",
+  "schedule": {
+   "kind": "cron",
+   "expr": "45 13,18,21 * * 1-5",
+   "display": "45 13,18,21 * * 1-5"
+  },
+  "script": "jince_fullchain_scan.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "执行金策宗师团自动全链扫描: 用 terminal 运行: cd E:\\GoldstrategyEngine && \"C:\\Users\\ASUS/.workbuddy/binaries/python/envs/ate/Scripts/pyt"
+ },
+ {
+  "job_id": "",
+  "name": "金策宗师团·08:30开盘前简报",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 8 * * *",
+   "display": "30 8 * * *"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策宗师团总调度，执行每日 08:30 开盘前简报（自包含指令，无对话上下文）。步骤：1) terminal 运行 `cd E:\\GoldstrategyEngine && \"C:\\Users\\ASUS/.workbuddy/binar"
+ },
+ {
+  "job_id": "",
+  "name": "金策宗师团·22:00事件日报+复盘",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 22 * * *",
+   "display": "0 22 * * *"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策宗师团总调度，执行每日 22:00 事件日报+复盘（自包含指令，无对话上下文）。步骤：1) terminal 运行 `cd E:\\GoldstrategyEngine && \"C:\\Users\\ASUS/.workbuddy/bin"
+ },
+ {
+  "job_id": "",
+  "name": "金策宗师团·月度P4出徒评审",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 9 1 * *",
+   "display": "0 9 1 * *"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策宗师团总调度，执行每月 P4 出徒评审（自包含指令，无对话上下文）。步骤：1) terminal 运行 `cd E:\\GoldstrategyEngine && \"C:\\Users\\ASUS/.workbuddy/binaries/"
+ },
+ {
+  "job_id": "",
+  "name": "jince-node-tokyo-open-0800",
+  "schedule": {
+   "kind": "cron",
+   "expr": "5 8 * * *",
+   "display": "5 8 * * *"
+  },
+  "script": "jince_node.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策宗师团主持人,执行 08:00 东京开评节点(投到群 金策·宗师团)。步骤: 1)读 E:\\GoldstrategyEngine/data/ 最新 daily_advisory_*.json + 三线 brief(pending_o"
+ },
+ {
+  "job_id": "",
+  "name": "jince-node-tokyo-close-1200",
+  "schedule": {
+   "kind": "cron",
+   "expr": "5 12 * * *",
+   "display": "5 12 * * *"
+  },
+  "script": "jince_node.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策宗师团主持人,执行 12:00 东京对账节点(投到本群 金策·宗师团)。步骤: 1)读 E:\\GoldstrategyEngine/data/discussion_log.jsonl 今日 08:00 开评基准 + 最新 daily"
+ },
+ {
+  "job_id": "",
+  "name": "jince-node-london-open-1500",
+  "schedule": {
+   "kind": "cron",
+   "expr": "5 15 * * *",
+   "display": "5 15 * * *"
+  },
+  "script": "jince_node.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策宗师团主持人,执行 15:00 伦敦开评节点(投到本群 金策·宗师团;冬令时此节点改 16:00,由总调度维护切换)。步骤: 1)读 E:\\GoldstrategyEngine/data/ 最新 daily_advisory_*.j"
+ },
+ {
+  "job_id": "",
+  "name": "jince-node-london-close-1800",
+  "schedule": {
+   "kind": "cron",
+   "expr": "5 18 * * *",
+   "display": "5 18 * * *"
+  },
+  "script": "jince_node.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策宗师团主持人,执行 18:00 伦敦对账节点(投到本群 金策·宗师团)。步骤: 1)读 E:\\GoldstrategyEngine/data/discussion_log.jsonl 今日 15:00 开评基准 vs 最新 dail"
+ },
+ {
+  "job_id": "",
+  "name": "jince-node-ny-open-2100",
+  "schedule": {
+   "kind": "cron",
+   "expr": "5 21 * * *",
+   "display": "5 21 * * *"
+  },
+  "script": "jince_node.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策宗师团主持人,执行 21:00 美盘开评节点(投到本群 金策·宗师团;冬令时此节点改 22:00,由总调度维护切换)。步骤: 1)读 E:\\GoldstrategyEngine/data/ 最新 daily_advisory_*.j"
+ },
+ {
+  "job_id": "",
+  "name": "jince-node-ny-close-0200",
+  "schedule": {
+   "kind": "cron",
+   "expr": "5 2 * * *",
+   "display": "5 2 * * *"
+  },
+  "script": "jince_node.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策宗师团主持人,执行 02:00 美盘对账与当日收口节点(投到本群 金策·宗师团)。步骤: 1)读 E:\\GoldstrategyEngine/data/discussion_log.jsonl 今日 21:00 基准 vs 最新 d"
+ },
+ {
+  "job_id": "",
+  "name": "金策宗师团·11-02冬令生死测拉数(一次性闹钟)",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 9 2 11 *",
+   "display": "0 9 2 11 *"
+  },
+  "script": "",
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "执行 11-02 冬令生死测拉数(确定性脚本, 不烧 key 分析): 用 terminal 运行 cd E:\\GoldstrategyEngine && \"C:\\Users\\ASUS/.workbuddy/binaries/python/"
+ },
+ {
+  "job_id": "",
+  "name": "bot-sota-monthly-upgrade",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 3 1,15 * *",
+   "display": "30 3 1,15 * *"
+  },
+  "script": "bot_sota_scan.py",
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "local",
+  "prompt_head": "你是 Hermes 主 bot 的维护任务：给 26 个 profile 的 SOTA 弹药库技能做定期升级。本轮扫描结果在上方 script 输出（bot_sota_scan.py，周期 90 天，批次 ≤4 防 429）。执行规则：1)"
+ },
+ {
+  "job_id": "",
+  "name": "bot-soul-smoke-monthly",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 4 1 * *",
+   "display": "30 4 1 * *"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "local",
+  "prompt_head": "你是 Hermes 主 bot 的维护任务：每月给金策 3 个交易 bot + 3 个重点专家 bot 的 SOUL/SOTA 做一次冒烟验真（验证人设加载正确、没有坏掉）。执行：1) 依次跑 `hermes -p <profile> ch"
+ },
+ {
+  "job_id": "",
+  "name": "jince-weekly-review",
+  "schedule": {
+   "kind": "cron",
+   "expr": "5 16 * * 5",
+   "display": "5 16 * * 5"
+  },
+  "script": "jince_weekly_review.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策宗师团周会主持人, 执行每周五16:05周复盘+下周排期(确定性, 0 LLM)。terminal 运行: cd E:\\GoldstrategyEngine && \"C:\\Users\\ASUS\\.workbuddy\\binaries"
+ },
+ {
+  "job_id": "",
+  "name": "jince-synth-meeting-sat",
+  "schedule": {
+   "kind": "cron",
+   "expr": "5 9 * * 6",
+   "display": "5 9 * * 6"
+  },
+  "script": "jince_synth_meeting.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "金策宗师团·综合大会·周六回顾场(确定性0LLM): 运行 python jince_synth_meeting.py 投全文到群, 五板块实数, 外网断降级不静默, 生活格@hermes口述。"
+ },
+ {
+  "job_id": "",
+  "name": "jince-synth-meeting-sun",
+  "schedule": {
+   "kind": "cron",
+   "expr": "5 15 * * 0",
+   "display": "5 15 * * 0"
+  },
+  "script": "jince_synth_meeting.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "金策宗师团·综合大会·周日前瞻场(确定性0LLM): 运行 python jince_synth_meeting.py 投全文到群, 五板块实数, 外网断降级不静默, 生活格@hermes口述。"
+ },
+ {
+  "job_id": "",
+  "name": "李彦明·数字分身每日培养",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 7 * * *",
+   "display": "every day at 07:30"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "local",
+  "prompt_head": "你是李彦明的数字分身培养管线（由主 bot default 执行）。任务（全程自主，不问人）：\n1) 先读 D:\\分身之家\\档案\\李彦明_分身档案_v1.md（口吻铁律/红线/绿黄红三级）。\n2) 扫 E:\\workbuddy\\内容中心\\收"
+ },
+ {
+  "job_id": "",
+  "name": "金策节点看门狗·每15分钟",
+  "schedule": {
+   "kind": "cron",
+   "expr": "15,45 * * * *",
+   "display": "15,45 * * * *"
+  },
+  "script": "jince_watchdog.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "金策2h效率播报",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 0,2,4,6,8,10,12,14,16,18,20,22 * * *",
+   "display": "0 0,2,4,6,8,10,12,14,16,18,20,22 * * *"
+  },
+  "script": "jince_eff_report.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "金策24h心跳看门狗·每30min点名",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0,30 * * * *",
+   "display": "0,30 * * * *"
+  },
+  "script": "jince_heartbeat_watch.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "金策自动巡检·节点+实读+三件套",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/30 * * * *",
+   "display": "*/30 * * * *"
+  },
+  "script": "jince_auto_patrol.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "每30min确定性巡检金策宗师团: 核今日6节点是否落记 + ATE实读MT5活体(根治import坏) + gateway/MT5终端三件套 + 节点脚本语法. 全绿静默(stdout=[巡检OK]), 有异常才进群点名. 429-pro"
+ },
+ {
+  "job_id": "",
+  "name": "各学科网站·凌晨4点升级",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 7 * * *",
+   "display": "30 7 * * *"
+  },
+  "script": "sites_daily_upgrade.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "local",
+  "prompt_head": "各学科网站每日自动升级(确定性0LLM): 12学科站各追加1个增量(题库/知识点), 升级日志留痕, 真改文件才算升级(防刷数)."
+ },
+ {
+  "job_id": "",
+  "name": "各学科网站·每日2230通报",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 22 * * *",
+   "display": "30 22 * * *"
+  },
+  "script": "sites_daily_report.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "local",
+  "prompt_head": "各学科网站每日进度通报(确定性0LLM): 汇总12学科站首版状态/累计升级/最后升级日/掉队名单(连续2天未升级点名), 投群."
+ },
+ {
+  "job_id": "",
+  "name": "金策·任务续跑执行器·每30min",
+  "schedule": {
+   "kind": "interval",
+   "minutes": 30,
+   "display": "every 30m"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "【金策·任务续跑制度】monitor 只有在本批『确有任务到点该续』时才叫醒你(输出不变你被抑制=不烧LLM、不撞429)。台账:E:/GoldstrategyEngine/data/task_ledger.json。做法:①先跑 pyth"
+ },
+ {
+  "job_id": "",
+  "name": "金策·每日03:00全面深度体检",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 3 * * *",
+   "display": "0 3 * * *"
+  },
+  "script": "jince_daily_healthcheck.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "每日凌晨3点全面深度体检(7项: 全链心跳/9节点实跑/json合法性/误归档防线/坏账本自修/429池/看板编译; 确定性安全项自动修好, 动脑项自动登记task_ledger交给30min续跑执行器, 交易零影响)"
+ },
+ {
+  "job_id": "",
+  "name": "金策看板同步哨兵·每10min",
+  "schedule": {
+   "kind": "cron",
+   "expr": "20,50 * * * *",
+   "display": "20,50 * * * *"
+  },
+  "script": "jince_dashboard_sync_guard.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "金策看板同步哨兵(确定性0LLM): 每10min读 .last_synced stamp vs 源看板 mtime; 已同步无更新->静默; 有更新待推->四层推送(探4候选IP->resolve推->gh-token->裸推)成功即静默"
+ },
+ {
+  "job_id": "",
+  "name": "金策每日体检汇报·0845投群",
+  "schedule": {
+   "kind": "cron",
+   "expr": "45 8 * * *",
+   "display": "45 8 * * *"
+  },
+  "script": "jince_health_report.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "金策每日03:00全面深度体检结果的大白话汇报(确定性0LLM): 读 healthcheck_last.json, 全绿一行汇报, 异常逐条点名+已自动修+待续跑, 结果缺失/陈旧>16h直接报警'03:00体检没跑'. 失败也发声绝不静"
+ },
+ {
+  "job_id": "",
+  "name": "金策每日学习进化升级·2130",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 21 * * *",
+   "display": "30 21 * * *"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "每日学习进化(18:30前完成): strategy-rd 从 rd_queue 领1条研究课题(无新题则复验已知最强setup/攒样本), 跑五验(同分母A/B+30笔实盘复验门槛), 过五验=WATCH攒样本, 不过=REJECT留痕说"
+ },
+ {
+  "job_id": "",
+  "name": "金策群主持·白天带节奏",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 21 * * *",
+   "display": "0 21 * * *"
+  },
+  "script": "jince_group_host.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "金策群主持(确定性0LLM): 白天6个时刻(09/11/14/16/19/21点)出一条主持人点评——接住刚发生的事+点名风控/研发在干啥+预告下一场+异常点名. 治'群太安静'. 0 LLM 429-proof, 同小时防刷屏, 08:"
+ },
+ {
+  "job_id": "",
+  "name": "金策行情实时喂·每5min",
+  "schedule": {
+   "kind": "cron",
+   "expr": "5,35 * * * *",
+   "display": "5,35 * * * *"
+  },
+  "script": "jince_tick_push.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "金策行情实时喂(确定性0 LLM, 0 429): 每5min ATE活体实读15品种tick→写tick_live.json→推上GitHub(gh-api兜底), 喂看板顶部实时条. 终端断/全品种无tick=fail-open沿用上份"
+ },
+ {
+  "job_id": "",
+  "name": "各学科网站·凌晨2点升级+部署",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 2 * * *",
+   "display": "0 2 * * *"
+  },
+  "script": "sites_upgrade_and_deploy.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "各学科网站凌晨2点全面优化升级+部署上线(确定性0 LLM, 0 429): ①跑 sites_daily_upgrade.py(12站增量升级, 0 LLM 429免疫) ②跑 sites_deploy_ghpages.py(gh-api"
+ },
+ {
+  "job_id": "",
+  "name": "各学科网站·凌晨5点汇报",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 5 * * *",
+   "display": "0 5 * * *"
+  },
+  "script": "sites_daily_report_0845.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "各学科独立网站每日08:45汇报(确定性0 LLM, 0 429): 读 独立站台账.json+升级状态.json, 逐站验公网200, 出大白话(12站 公网活/挂/掉队/累计升级). 全绿一行'全绿:12站公网全活 无掉队'; 有挂/掉"
+ },
+ {
+  "job_id": "",
+  "name": "jince-midday-asia-1005",
+  "schedule": {
+   "kind": "cron",
+   "expr": "5 10 * * *",
+   "display": "5 10 * * *"
+  },
+  "script": "jince_midday_deep.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "金策宗师团·亚盘半日深析节点(10:05): 执行 jince_midday_deep.py (no_agent 0 LLM, 脚本生成5段正文直投群)。"
+ },
+ {
+  "job_id": "",
+  "name": "jince-midday-europe-1635",
+  "schedule": {
+   "kind": "cron",
+   "expr": "35 16 * * *",
+   "display": "35 16 * * *"
+  },
+  "script": "jince_midday_deep.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "金策宗师团·欧盘半日深析节点(16:35): 执行 jince_midday_deep.py (no_agent 0 LLM, 脚本生成5段正文直投群)。"
+ },
+ {
+  "job_id": "",
+  "name": "jince-midday-us-2335",
+  "schedule": {
+   "kind": "cron",
+   "expr": "35 23 * * *",
+   "display": "35 23 * * *"
+  },
+  "script": "jince_midday_deep.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "金策宗师团·美盘半日深析节点(23:35): 执行 jince_midday_deep.py (no_agent 0 LLM, 脚本生成5段正文直投群)。"
+ },
+ {
+  "job_id": "",
+  "name": "各学科网站·凌晨4点升级+部署",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 4 * * *",
+   "display": "0 4 * * *"
+  },
+  "script": "sites_upgrade_and_deploy.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "bot-chat",
+  "prompt_head": "各学科网站凌晨4点全面升级+部署上线(确定性0 LLM, 0 429): 跑 sites_upgrade_and_deploy.py (内含 12站增量升级 + gh-api 推 12 独立仓 Pages), 升级日志留痕, 真改文件才算升"
+ },
+ {
+  "job_id": "",
+  "name": "金策·后台训练·每日回测验收",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 1 * * *",
+   "display": "30 1 * * *"
+  },
+  "script": "training_run.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "金策后台训练确定性脚本: 跑回测台验收 + 交叉五验 WATCH 队列 + 出报告(0 LLM 429-proof)."
+ },
+ {
+  "job_id": "",
+  "name": "金策·后台训练·全宇宙回测(00:10不限时)",
+  "schedule": {
+   "kind": "cron",
+   "expr": "10 0 * * *",
+   "display": "10 0 * * *"
+  },
+  "script": "training_full_universe_wrapper.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "local",
+  "prompt_head": "金策后台训练: 每日 00:10 全宇宙回测后台跑(training_full_universe.py, 不限时 0 LLM), 落 backtest_edge.json + run_stamp(含引擎自检哨兵). 验收由 01:30 tr"
+ },
+ {
+  "job_id": "",
+  "name": "金策·方向反馈环·每日巡检",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 21 * * *",
+   "display": "30 21 * * *"
+  },
+  "script": "direction_feedback.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "金策·研判→做单 方向反馈环 每日巡检(0 LLM 429-proof): 刷新 direction_feedback.json 准头表 + 提权/降级闸 + 巡检(recon 断环/准头表>48h 未刷新 fail-loud). 接进 3"
+ },
+ {
+  "job_id": "",
+  "name": "金策·GitHub 夜间全推",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 3 * * *",
+   "display": "0 3 * * *"
+  },
+  "script": "jince_github_sync.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "bot-chat",
+  "prompt_head": "金策 GitHub 夜间全推: 跑确定性同步脚本 jince_github_sync.py(all) —— 走 gh api(api.github.com)绕 443 墙, 把 ① D:/jince_sass 金策·策略SaaS全量源码 ②"
+ },
+ {
+  "job_id": "",
+  "name": "技能·GitHub 夜间全推",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 4 * * *",
+   "display": "30 4 * * *"
+  },
+  "script": "skills_github_sync.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "bot-chat",
+  "prompt_head": "技能全量 GitHub 夜间同步(确定性 0 LLM): 跑脚本 skills_github_sync.py —— 复用金策 jince_github_sync.py 的 push_via_api(gh api 绕 443 墙 + 内容sh"
+ },
+ {
+  "job_id": "",
+  "name": "金策MFE/MAE活单追踪·30min",
+  "schedule": {
+   "kind": "interval",
+   "minutes": 30,
+   "display": "every 30m"
+  },
+  "script": "jince_mfe_mae_track.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "金策晨学哨·0900",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 9 * * *",
+   "display": "every day at 9am"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策学习进化机制的晨学哨（每日 09:00 任务，新会话无上下文）。执行六步：①跑 E:\\AgentCommons\\bin\\commons.cmd inbox -Agent hermes 取进化营策略信号与回复（未读按技能 mt5-ma"
+ },
+ {
+  "job_id": "",
+  "name": "金策日结进化·2000",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 20 * * *",
+   "display": "every day at 8pm"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策日结进化哨（每日20:00）。第一步先读 E:/workbuddy/国外模型/hermes/scripts/jince_rijie_sop.md，严格按其中七步 SOP 执行（终端/文件操作照做，不做多余推理铺陈）。【输出预算铁律（"
+ },
+ {
+  "job_id": "",
+  "name": "金策家属盈亏·2005",
+  "schedule": {
+   "kind": "cron",
+   "expr": "5 20 * * *",
+   "display": "5 20 * * *"
+  },
+  "script": "family_pnl_summary.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "金策技术验证面板·2010",
+  "schedule": {
+   "kind": "cron",
+   "expr": "10 20 * * *",
+   "display": "10 20 * * *"
+  },
+  "script": "jince_learn_verify.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "local",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "金策共同体·自动取件哨·每15min",
+  "schedule": {
+   "kind": "cron",
+   "expr": "25,55 * * * *",
+   "display": "25,55 * * * *"
+  },
+  "script": "jince_commons_pickup.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "金策·币系0.01样本腿6h滚动平仓+方向轮换·进化加速",
+  "schedule": {
+   "kind": "interval",
+   "minutes": 360,
+   "display": "every 360m"
+  },
+  "script": "roll6h_1108.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "11-07 23:2x 开的 magic=30261106 币系0.01观察腿(BTC/ETH SELL 各0.01手, 跟L4裁定走空侧) 12h必平哨: 执行 close_obs12h_1108.py, 平掉 magic=3026110"
+ },
+ {
+  "job_id": "",
+  "name": "金策·开单通道自修复链·每5min(拒单=我方问题立即修)",
+  "schedule": {
+   "kind": "cron",
+   "expr": "10,40 * * * *",
+   "display": "10,40 * * * *"
+  },
+  "script": "order_channel_selfheal_1108.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "币系close-only放开即开0.01哨: 执行 btc_obs_open_on_unlock_1107.py (无输出=未放开/已开, 静默; 有输出=已开单, 投群)"
+ },
+ {
+  "job_id": "",
+  "name": "金策·换网自适应桥切换哨·每30min",
+  "schedule": {
+   "kind": "interval",
+   "minutes": 30,
+   "display": "every 30m"
+  },
+  "script": "bridge_adapt_watch.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "换网自适应哨: 每30min读出口IP+BTC tm; 出口变化=自动重登终端(桥LB重分配)+再验tm; tm=1(币系放开)=⚠️不任意开腿: 先实读v4wave-20261118三腿(BTC/ETH/SOL SELL 0.01, ma"
+ },
+ {
+  "job_id": "",
+  "name": "金策·宿主闸验·0030",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 0 * * *",
+   "display": "30 0 * * *"
+  },
+  "script": "training_host_gate_check.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "local",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "金策·strategy-rd主动优化深督·每日10点",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 10 * * *",
+   "display": "every day at 10am"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "local",
+  "prompt_head": "金策主bot执行李彦明11-12令: 深督strategy-rd主动策略优化(主动模式, 每48h一命题, 首交不晚11-14 09:00)。三封令(bus 20261112T092710三件, message_agent admissio"
+ },
+ {
+  "job_id": "",
+  "name": "金策验尸官交付监测·每日1015",
+  "schedule": {
+   "kind": "cron",
+   "expr": "15 10 * * *",
+   "display": "every day at 10:15"
+  },
+  "script": "jince_postmortem_monitor.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "金策验尸官周报归纳·周五",
+  "schedule": {
+   "kind": "cron",
+   "expr": "40 21 * * 5",
+   "display": "every friday at 21:40"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "收集金策验尸官(@post-mortem)本周复盘周报: 读 E:/AgentCommons/bus/outbox/post-mortem/ 与 E:/AgentCommons/bus/archive/post-mortem/ 近7天文件("
+ },
+ {
+  "job_id": "",
+  "name": "SNDK闸门复查_1112",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-12T23:05:00+08:00",
+   "display": "once at 2026-11-12 23:05"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "22:16做单思路SNDK.NAS空单候选(质量榜期望+0.15R, RR2.0, 扣0.095R成本后+0.055R正期望, 当日唯一过成本闸): 23:05复查事件窗后闸门状态. 1) 实读 live_state.json 的 exp_"
+ },
+ {
+  "job_id": "",
+  "name": "金策·高流动性K线每日刷新(防断更)",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 7 * * *",
+   "display": "30 7 * * *"
+  },
+  "script": "jince_daily_csv_refresh.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "local",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "金策·验尸官信箱中继·每6h",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 2,8,14,20 * * *",
+   "display": "0 2,8,14,20 * * *"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "local",
+  "prompt_head": "你是金策·验尸官(post-mortem)中继执行。任务: 处理 E:/AgentCommons/bus/inbox/post-mortem/ 下所有 *.json pending 消息(文件名时间戳序)。逐封: ①读 subject+bo"
+ },
+ {
+  "job_id": "",
+  "name": "金策通宵巡检报0030",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-13T00:30:00+08:00",
+   "display": "once at 2026-11-13 00:30"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "weixin:o9cq80y1wgC-Z_7mz1TyQYgux1zU@im.wechat",
+  "prompt_head": "金策总调度执行 11-13 00:30 通宵巡检报。步骤: 1) terminal 跑 cd E:/GoldstrategyEngine && 'D:/workbuddy/binaries/python/versions/3.13.12/p"
+ },
+ {
+  "job_id": "",
+  "name": "金策通宵巡检报0300",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-13T03:00:00+08:00",
+   "display": "once at 2026-11-13 03:00"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "weixin:o9cq80y1wgC-Z_7mz1TyQYgux1zU@im.wechat",
+  "prompt_head": "金策总调度执行 11-13 03:00 通宵巡检报。步骤: 1) terminal 跑 cd E:/GoldstrategyEngine && 'D:/workbuddy/binaries/python/versions/3.13.12/p"
+ },
+ {
+  "job_id": "",
+  "name": "WorkBuddy桌面端·更新自愈哨·30min",
+  "schedule": {
+   "kind": "interval",
+   "minutes": 30,
+   "display": "every 30m"
+  },
+  "script": "workbuddy_postupdate_selfheal.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "WorkBuddy桌面端更新后自愈哨(纯脚本无LLM): 脚本自身完成版本标记对齐/残留进程点名/报告落盘, 全绿静默不出声, 仅在检测到更新/版本失同步/近30min残留进程时投递一行报告到本微信."
+ },
+ {
+  "job_id": "",
+  "name": "金策 Agnes key 哨(每日00:05全量探活+429回收)",
+  "schedule": {
+   "kind": "cron",
+   "expr": "5 0 * * *",
+   "display": "5 0 * * *"
+  },
+  "script": "jince_agnes_key_sentinel.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "Hermes桌面端·中文路径守护哨·30min",
+  "schedule": {
+   "kind": "interval",
+   "minutes": 30,
+   "display": "every 30m"
+  },
+  "script": "hermes_cnpath_guard.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "Hermes桌面端中文路径守护(纯脚本无LLM): E:\\hb联结别名丢了自动重建、两个Hermes.lnk被改回中文路径自动纠回ASCII别名; 全绿静默不投递, 有干预才报一行到本微信."
+ },
+ {
+  "job_id": "",
+  "name": "每日晨报-chief-of-staff",
+  "schedule": {
+   "kind": "cron",
+   "expr": "0 7 * * *",
+   "display": "every day at 7:00"
+  },
+  "script": "morning_brief_collect.py",
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "weixin:o9cq80y1wgC-Z_7mz1TyQYgux1zU@im.wechat,bot-chat",
+  "prompt_head": "你是李彦明的每日晨报哨兵（Grok Bot 式 chief of staff）。前缀注入了 morning_brief_collect.py 的原料。把它组织成一份 10 到 18 行的中文大白话早报，格式：第一行写 晨报加日期和星期；然后"
+ },
+ {
+  "job_id": "",
+  "name": "审查闸哨兵-15m",
+  "schedule": {
+   "kind": "interval",
+   "minutes": 15,
+   "display": "every 15m"
+  },
+  "script": "action_review_watch.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "weixin:o9cq80y1wgC-Z_7mz1TyQYgux1zU@im.wechat,bot-chat",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "金策·交付验活哨·30min(防空交付)",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/30 * * * *",
+   "display": "*/30 * * * *"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策交付验活哨。monitor 每30min 跑 jince_delivery_verify.py（确定性，复核所有DONE宣称的交付物是否真实存在/非0B/可解析，假DONE自动回派redo件进rd_queue，旧账>7d只留痕）。本"
+ },
+ {
+  "job_id": "",
+  "name": "金策·执行预检日检·0730",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 7 * * *",
+   "display": "30 7 * * *"
+  },
+  "script": "jince_exec_preflight_daily.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "金策·执行预检日检·0730 (确定性 0LLM, BUGFIX 11-14 后改走包装脚本): 先 ATE 实读刷新 exec_spec_fixture.json(含实读价快照), 再跑规则自检(数据有效性闸: 缺实读价快照=显式FAIL"
+ },
+ {
+  "job_id": "",
+  "name": "金策·哨兵死信开关·每15min",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/15 * * * *",
+   "display": "*/15 * * * *"
+  },
+  "script": "jince_sentinel_liveness.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "金策哨兵死信开关: 确定性脚本查各活体哨产物心跳, 全绿静默, 超期点名。"
+ },
+ {
+  "job_id": "",
+  "name": "金策·一键kill switch看守·每1min",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/1 * * * *",
+   "display": "*/1 * * * *"
+  },
+  "script": "jince_kill_switch_watch.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "kill switch 触发看守: ARMED静默, TRIGGERED则ATE全撤全平+halt。"
+ },
+ {
+  "job_id": "",
+  "name": "金策·kill switch月度纸面演练·0730",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 7 1,15 * *",
+   "display": "30 7 1,15 * *"
+  },
+  "script": "jince_kill_switch_drill.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "月度演练: 验ATE/MT5 init/文件链, 不碰实单, 全绿静默。"
+ },
+ {
+  "job_id": "",
+  "name": "金策·MC+VaR风控量化哨·每日0745",
+  "schedule": {
+   "kind": "cron",
+   "expr": "45 7 * * *",
+   "display": "45 7 * * *"
+  },
+  "script": "jince_mc_var_report.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "交易级台账 MC/VaR 红绿报告, 全绿静默。"
+ },
+ {
+  "job_id": "",
+  "name": "金策·L2代理+regime门·每30min",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/30 * * * *",
+   "display": "*/30 * * * *"
+  },
+  "script": "jince_regime_zone_runner.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "确定性零LLM: 刷新HVN/LVN区+regime门+采集器自愈, 全绿静默, 红报一行到群"
+ },
+ {
+  "job_id": "",
+  "name": "金策·币系茶歇峰触发哨·1115 00:30",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-15T00:30:00+08:00",
+   "display": "once at 2026-11-15 00:30"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策主bot执行臂。任务: 币系茶歇峰(16-17UTC)触发检查。步骤: ①跑探针 C:/Users/ASUS/.workbuddy/binaries/python/envs/ate/Scripts/python.exe E:/wor"
+ },
+ {
+  "job_id": "",
+  "name": "金策·周一开盘哨·1116 06:10",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-16T15:16:50.544643+08:00",
+   "display": "once at 2026-11-16 15:16"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策主bot。周一06:10 BJT: FX 06:00/黄金07:00刚重开。任务: ①读 E:/GoldstrategyEngine/data/regime_state.json 与 l2proxy_zones.json(新鲜度>2"
+ },
+ {
+  "job_id": "",
+  "name": "金策·分品系深研R1币系·2330",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-14T23:30:00+08:00",
+   "display": "once at 2026-11-14 23:30"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策 strategy-rd 夜间深研执行臂。本轮主题=币系做单思路全网深学优化。任务: ①读 E:/GoldstrategyEngine/research/family_playbooks_20261114.md 品系4(币系)节+技"
+ },
+ {
+  "job_id": "",
+  "name": "金策·分品系深研R2黄金FX·0130",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-15T01:30:00+08:00",
+   "display": "once at 2026-11-15 01:30"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策 strategy-rd 夜间深研执行臂。本轮主题=黄金+外汇品系做单思路优化。任务: ①读 E:/GoldstrategyEngine/research/family_playbooks_20261114.md 品系1/2节; ②"
+ },
+ {
+  "job_id": "",
+  "name": "金策·分品系深研R3股指ORR·0330",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-15T03:30:00+08:00",
+   "display": "once at 2026-11-15 03:30"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策 strategy-rd 夜间深研执行臂。本轮主题=股指/股票 ORB(P5)+财报季做单思路优化。任务: ①读 E:/GoldstrategyEngine/research/family_playbooks_20261114.md"
+ },
+ {
+  "job_id": "",
+  "name": "金策·分品系深研R4汇总·0530",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-15T05:30:00+08:00",
+   "display": "once at 2026-11-15 05:30"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策 strategy-rd 夜间深研汇总执行臂。本轮=夜间 4 轮深研汇总+执行层参数固化。任务: ①读 E:/GoldstrategyEngine/research/family_deep_study_log.jsonl 全轮记录;"
+ },
+ {
+  "job_id": "",
+  "name": "金策·晨间汇总Word·0715",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-15T07:15:00+08:00",
+   "display": "once at 2026-11-15 07:15"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "bot-chat",
+  "prompt_head": "你是金策 chief。晨间汇总: ①读 E:/GoldstrategyEngine/research/family_deep_study_log.jsonl + data/family_playbook.json + 技能 jince-wi"
+ },
+ {
+  "job_id": "",
+  "name": "金策·全链路验证哨·每30min",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/30 * * * *",
+   "display": "*/30 * * * *"
+  },
+  "script": "jince_verify_all.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "确定性验证: 引擎新码在跑/进程活/数据链不断/闸不失效. 全绿静默, 红报一行到群"
+ },
+ {
+  "job_id": "",
+  "name": "金策·SD外汇周一挂单2105",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-17T10:12:41.149736+08:00",
+   "display": "once at 2026-11-17 10:12"
+  },
+  "script": "sd_place_fx_monday.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "金策模拟户外汇黄金股指周一21点05挂单44 【11-15审查注记: P0三处+区闸已修讫, 但FX 11品种挂单被禁(10015)需市价触发变体(rd_queue sd_fx_monday_market_variant_1115), 回测"
+ },
+ {
+  "job_id": "",
+  "name": "金策·SD12h强平哨·每30min",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/30 * * * *",
+   "display": "*/30 * * * *"
+  },
+  "script": "sd_forceclose_cron.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "金策模拟户SD批12h强平巡检"
+ },
+ {
+  "job_id": "",
+  "name": "金策·SD二道波2240补挂",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-16T22:40:00+08:00",
+   "display": "once at 2026-11-16 22:40"
+  },
+  "script": "sd_place_fx_monday.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "金策模拟户SD批二道波: 美股22:30开市后补挂败单品种(首波21:15的dedup自动跳已挂, 只补失败)"
+ },
+ {
+  "job_id": "",
+  "name": "金策·验尸进化哨·每日0230",
+  "schedule": {
+   "kind": "cron",
+   "expr": "30 2 * * *",
+   "display": "30 2 * * *"
+  },
+  "script": "sd_evolution_postmortem.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "订单验尸进化制度: 扫MT5 12h成交补order_lifecycle close事件+逐单验尸三问+3连同因SL自动rd_queue提案, 输出evolution_daily.json"
+ },
+ {
+  "job_id": "",
+  "name": "金策·故障任务即时补跑哨·每30min",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/30 * * * *",
+   "display": "*/30 * * * *"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "故障补跑哨·红件复核层(v5降级: jince-fail-scan-30min=确定性主层, 本层只做红件复核不重复其活): ①查 jince-fail-scan-30min(4be8bdf1b647) 上拍 last_status/las"
+ },
+ {
+  "job_id": "",
+  "name": "金策 12h强平哨 hc_xau3923_1116",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-17T10:13:16.788997+08:00",
+   "display": "once at 2026-11-17 10:13"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "bot-chat",
+  "prompt_head": "金策 12h 强平哨 hc_xau3923_1116 到点(22:00): 用 ATE 通道(C:/Users/ASUS/.workbuddy/binaries/python/envs/ate/Scripts/python.exe + Me"
+ },
+ {
+  "job_id": "",
+  "name": "jince-fail-scan-30min",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/30 * * * *",
+   "display": "*/30 * * * *"
+  },
+  "script": "jince_rerun_immediate.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "scan"
+ },
+ {
+  "job_id": "",
+  "name": "P1修复批重派(池WALL解除后)",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-17T10:57:28.265377+08:00",
+   "display": "once in 2h"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "金策P1修复批重派件(11-17 09:0x主bot挂): 先读 E:\\GoldstrategyEngine\\data\\agnes_key_sentinel_last.json 定池态: 若 grn 有 LIVE 且 pool_nonliv"
+ },
+ {
+  "job_id": "",
+  "name": "AUS200撤单重试(市场开即撤)",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-17T16:00:38.536840+08:00",
+   "display": "once in 2h"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "金策 AUS200 撤单重试(李彦明11-17令'把挂单撤了'的残留件): 用 ATE 通道(D:/workbuddy/binaries/python/versions/3.13.12/python.exe + MT5_TERMINAL t"
+ },
+ {
+  "job_id": "",
+  "name": "金策·数据官哨兵·每30min(K线新鲜度闸+原子刷新)",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/30 * * * *",
+   "display": "*/30 * * * *"
+  },
+  "script": null,
+  "no_agent": false,
+  "enabled": true,
+  "deliver": "bot-chat",
+  "prompt_head": "数据官30min哨兵: 全绿只打[数据官OK]静默; 陈旧/坏件自动MT5原子刷新(npz.tmp->replace); MT5挂=exit1由故障补跑哨接手。职责边界: 只写tf_cache npz+data_officer_last.j"
+ },
+ {
+  "job_id": "",
+  "name": "soul-wave-btc-2100",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-17T21:00:00+08:00",
+   "display": "once at 2026-11-17 21:00"
+  },
+  "script": "soul_wave_1117_wrapper.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "BTC灵魂信号空腿 21:00市价进场(币系go窗开), 脚本直接执行, 结果原样投递"
+ },
+ {
+  "job_id": "",
+  "name": "soul-wave-btc-2130-retry",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-17T21:30:00+08:00",
+   "display": "once at 2026-11-17 21:30"
+  },
+  "script": "soul_wave_1117_wrapper.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "BTC灵魂空腿 21:30补拍(若21:00未成交, 脚本自带防叠单dedup)"
+ },
+ {
+  "job_id": "",
+  "name": "slv2-eth-2100",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-17T21:00:00+08:00",
+   "display": "once at 2026-11-17 21:00"
+  },
+  "script": "slv2_eth_1117_wrapper.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "ETH新止损策略空腿 21:00 go窗开市价进(SL0.8ATR30+TP3R+GB1.5离场声明), 结果原样投递"
+ },
+ {
+  "job_id": "",
+  "name": "slv2-eth-2130-retry",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-17T21:30:00+08:00",
+   "display": "once at 2026-11-17 21:30"
+  },
+  "script": "slv2_eth_1117_wrapper.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "ETH新策略空腿 21:30补拍(防叠单dedup自带)"
+ },
+ {
+  "job_id": "",
+  "name": "slv2-sol-2100",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-17T21:00:00+08:00",
+   "display": "once at 2026-11-17 21:00"
+  },
+  "script": "slv2_sol_1117_wrapper.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "SOL赚钱格哨(李令'全部按赚钱参数执行')"
+ },
+ {
+  "job_id": "",
+  "name": "slv2-sol-2130-retry",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-17T21:30:00+08:00",
+   "display": "once at 2026-11-17 21:30"
+  },
+  "script": "slv2_sol_1117_wrapper.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "SOL赚钱格哨21:30补拍(防21:00漏拍, 叠单去重内置)"
+ },
+ {
+  "job_id": "",
+  "name": "param-officer-30m",
+  "schedule": {
+   "kind": "interval",
+   "minutes": 30,
+   "display": "every 30m"
+  },
+  "script": "jince_param_officer_wrapper.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "参数官30min一致性哨(李令'找专人负责参数'): 规格v4↔参数表↔哨常量三处审计+OOS样本账本; 静默=正常"
+ },
+ {
+  "job_id": "",
+  "name": "sentinel-health-30m",
+  "schedule": {
+   "kind": "interval",
+   "minutes": 30,
+   "display": "every 30m"
+  },
+  "script": "sentinel_health_wrapper.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "执行哨预发射体检30min哨(李令11-17'怎么没有执行'预防机制): 解释器基准/编译/MT5冒烟/feed活性/包装器grep, 静默=正常"
+ },
+ {
+  "job_id": "",
+  "name": "morning-report-1118",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-18T07:30:00+08:00",
+   "display": "once at 2026-11-18 07:30"
+  },
+  "script": "jince_morning_report_wrapper.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "晨间战报: 三腿持仓/平仓/净值/参数官账本/验尸, 大白话多行"
+ },
+ {
+  "job_id": "",
+  "name": "redline-v4wave-1119-0840",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-19T08:40:00+08:00",
+   "display": "once at 2026-11-19 08:40"
+  },
+  "script": "jince_redline_force_wrapper.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "v4wave三腿12h红线处置(FORCE): 结构破=平腿/未破=滚12h, 最小影响"
+ },
+ {
+  "job_id": "",
+  "name": "agnes-pool-guard",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/5 * * * *",
+   "display": "*/5 * * * *"
+  },
+  "script": "agnes_pool_guard.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "local",
+  "prompt_head": "Agnes key pool guardian: check http://127.0.0.1:8787/health, respawn pool if down."
+ },
+ {
+  "job_id": "",
+  "name": "金策12h强平哨_v4wave三腿_1119",
+  "schedule": {
+   "kind": "once",
+   "expr": "*/30 * * * *",
+   "display": "*/30 * * * *",
+   "run_at": "2026-11-19T09:45:00+08:00"
+  },
+  "script": "sd_forceclose_cron.py",
+  "no_agent": true,
+  "enabled": false,
+  "deliver": "origin",
+  "prompt_head": "金策 12h 强平哨 v4wave-20261118 三腿(BTC/ETH/SOL SELL 0.01, magic 20261104, 票号 712352572/712352642/712353066, 11-18 21:53 开, re"
+ },
+ {
+  "job_id": "",
+  "name": "redline-soulwave-1120-0940",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-20T09:40:00+08:00",
+   "display": "once at 2026-11-20 09:40"
+  },
+  "script": "jince_redline_force_wrapper.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "soulwave-auto-2135",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-19T21:35:00+08:00",
+   "display": "once at 2026-11-19 21:35"
+  },
+  "script": "auto_wave_soul_1119.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "system-patrol-30m",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/30 * * * *",
+   "display": "*/30 * * * *"
+  },
+  "script": "system_patrol_1119.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": "金策制度巡检哨: 验《制度铁律清单v1》机器验证列, 红件一行报+rd_queue工单, 全绿静默"
+ },
+ {
+  "job_id": "",
+  "name": "xau-touch-2200",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-19T22:00:00+08:00",
+   "display": "once at 2026-11-19 22:00"
+  },
+  "script": "xau_wave_touch_1119.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "xau-touch-2330",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-19T23:30:00+08:00",
+   "display": "once at 2026-11-19 23:30"
+  },
+  "script": "xau_wave_touch_1119.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "redline-eur-1120-0635",
+  "schedule": {
+   "kind": "once",
+   "run_at": "2026-11-20T06:35:00+08:00",
+   "display": "once at 2026-11-20 06:35"
+  },
+  "script": "jince_redline_force_wrapper.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "auto-soul-sweep-30m",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/30 * * * *",
+   "display": "*/30 * * * *"
+  },
+  "script": "auto_soul_sweep_1119.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "auto-soul-exit-10m",
+  "schedule": {
+   "kind": "cron",
+   "expr": "*/10 * * * *",
+   "display": "*/10 * * * *"
+  },
+  "script": "auto_soul_exit_watch_1119.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": ""
+ },
+ {
+  "job_id": "",
+  "name": "order-xp-daily-2015",
+  "schedule": {
+   "kind": "cron",
+   "expr": "15 20 * * *",
+   "display": "15 20 * * *"
+  },
+  "script": "order_xp_daily_1119.py",
+  "no_agent": true,
+  "enabled": true,
+  "deliver": "origin",
+  "prompt_head": ""
+ }
+]
