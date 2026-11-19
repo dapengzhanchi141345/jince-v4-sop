@@ -1,0 +1,2845 @@
+{
+  "generatedAt": "2026-09-20",
+  "source": "C:\\Users\\ASUS\\.workbuddy\\plugins\\marketplaces\\my-experts\\plugins",
+  "expertCount": 39,
+  "totalAgents": 178,
+  "experts": [
+    {
+      "dir": "bazi-calculator",
+      "name": "bazi-calculator",
+      "displayName_zh": "命理排盘师",
+      "displayName_en": "Bazi Calculator",
+      "profession_zh": "八字排盘专家",
+      "version": "1.0.0",
+      "author": "天机阁",
+      "expertType": "agent",
+      "leadAgent": "bazi-calculator",
+      "agentCount": 1,
+      "agents": [
+        "bazi-calculator"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "bazi-calculator",
+          "name_zh": "命理排盘师",
+          "name_en": "Bazi Calculator",
+          "profession_zh": "八字排盘专家",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "八字排盘",
+        "中国传统命理",
+        "日柱双验证"
+      ],
+      "oneLine_zh": "精通四柱八字精确排盘，内置日柱双验证、五虎遁、五鼠遁、真太阳时校正，杜绝排盘错误。",
+      "initPrompt_zh": "请提供出生信息（公历/农历、年月日时、出生地），我来为你精确排盘。",
+      "quickPrompts_zh": [
+        "请提供出生信息（公历/农历、年月日时、出生地），我来为你精确排盘。",
+        "验证这个八字是否正确：庚申 戊子 癸亥 甲寅",
+        "计算1980年12月16日的日柱"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "11.7KB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "bio-basics",
+      "name": "bio-basics",
+      "displayName_zh": "万物生·基础",
+      "displayName_en": "BioBasics",
+      "profession_zh": "基础生物导师",
+      "version": "1.1.0",
+      "author": "李彦明",
+      "expertType": "agent",
+      "leadAgent": "bio-basics",
+      "agentCount": 1,
+      "agents": [
+        "bio-basics"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "bio-basics",
+          "name_zh": "万物生·基础",
+          "name_en": "BioBasics",
+          "profession_zh": "基础生物导师",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "基础生物教学",
+        "智能出题评分",
+        "实验可视化"
+      ],
+      "oneLine_zh": "万物生·基础：覆盖小学科学到高中生物全程的K-12导师，含智能出题评分、实验可视化与间隔重复复习。（2026前沿技术升级）",
+      "initPrompt_zh": "帮我生成一份高中生物必修1《细胞结构》的随堂测验，包含8道选择题和2道简答题，附详细评分标准",
+      "quickPrompts_zh": [
+        "帮我生成一份高中生物必修1《细胞结构》的随堂测验，包含8道选择题和2道简答题，附详细评分标准",
+        "用动画演示光合作用的光反应和暗反应过程，适合高中教学",
+        "讲解孟德尔分离定律，绘制Punnett方格，并生成一套复习闪卡"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "27.1KB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "bio-frontier",
+      "name": "bio-frontier",
+      "displayName_zh": "万物生·前沿",
+      "displayName_en": "BioFrontier",
+      "profession_zh": "前沿生物导师",
+      "version": "1.1.0",
+      "author": "李彦明",
+      "expertType": "agent",
+      "leadAgent": "bio-frontier",
+      "agentCount": 1,
+      "agents": [
+        "bio-frontier"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "bio-frontier",
+          "name_zh": "万物生·前沿",
+          "name_en": "BioFrontier",
+          "profession_zh": "前沿生物导师",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "生物竞赛",
+        "硕博前沿",
+        "论文分析"
+      ],
+      "oneLine_zh": "万物生·前沿：竞赛硕博级导师，覆盖CNBO/IBO竞赛与硕士8方向博士9前沿，含论文分析与课题设计。（2026前沿技术升级）",
+      "initPrompt_zh": "帮我讲解CNBO竞赛中蛋白质结构与功能模块的核心考点，出一套拔高题",
+      "quickPrompts_zh": [
+        "帮我讲解CNBO竞赛中蛋白质结构与功能模块的核心考点，出一套拔高题",
+        "帮我总结单细胞多组学和空间转录组学的最新突破，适合研究生组会汇报",
+        "帮我评估这篇论文的可信度，识别有争议的结论：[粘贴DOI或摘要]"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "31.9KB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "bio-grader",
+      "name": "bio-grader",
+      "displayName_zh": "生阅卷",
+      "displayName_en": "BioGrader",
+      "profession_zh": "生物阅卷评分官",
+      "version": "1.1.0",
+      "author": null,
+      "expertType": "agent",
+      "leadAgent": "bio-grader",
+      "agentCount": 1,
+      "agents": [
+        "bio-grader"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "bio-grader",
+          "name_zh": "生阅卷",
+          "name_en": "Bio Grader",
+          "profession_zh": "生物阅卷评分官",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "生物阅卷",
+        "自动评分",
+        "学情分析"
+      ],
+      "oneLine_zh": "生物试卷智能评分专家，支持选择题自动批改、填空题关键词匹配、实验探究题分步评分和班级学情分析。（2026前沿技术升级）",
+      "initPrompt_zh": "批改这套生物试卷，标准答案和学生答案都在这里",
+      "quickPrompts_zh": [
+        "批改这套生物试卷，标准答案和学生答案都在这里",
+        "帮我看一下这个学生这次生物考试考得怎么样",
+        "我有一整班学生的生物试卷要批改"
+      ],
+      "embeddedSkills": [
+        "skill-bio-grader-workflow"
+      ],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "1.1MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "bio-master",
+      "name": "bio-master",
+      "displayName_zh": "万物生",
+      "displayName_en": "BioMaster",
+      "profession_zh": "万物生",
+      "version": "3.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "bio-master",
+      "agentCount": 6,
+      "agents": [
+        "bio-advanced",
+        "bio-grader",
+        "bio-master",
+        "bio-primary",
+        "bio-senior",
+        "bio-undergrad"
+      ],
+      "teamSize": 6,
+      "members": [
+        {
+          "id": "bio-master",
+          "name_zh": "万物生",
+          "name_en": "BioMaster",
+          "profession_zh": "主理人",
+          "role": "lead"
+        },
+        {
+          "id": "bio-primary",
+          "name_zh": "万物萌",
+          "name_en": "BioSprout",
+          "profession_zh": "基础生物导师",
+          "role": "member"
+        },
+        {
+          "id": "bio-senior",
+          "name_zh": "万物华",
+          "name_en": "BioBloom",
+          "profession_zh": "高中生物导师",
+          "role": "member"
+        },
+        {
+          "id": "bio-undergrad",
+          "name_zh": "万物研",
+          "name_en": "BioResearcher",
+          "profession_zh": "本科生物导师",
+          "role": "member"
+        },
+        {
+          "id": "bio-advanced",
+          "name_zh": "万物探",
+          "name_en": "BioExplorer",
+          "profession_zh": "高级生物导师",
+          "role": "member"
+        },
+        {
+          "id": "bio-grader",
+          "name_zh": "生阅卷",
+          "name_en": "BioGrader",
+          "profession_zh": "生物阅卷评分官",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "全学段生物",
+        "智能出题评分",
+        "实验可视化"
+      ],
+      "oneLine_zh": "生物全学段专家团，覆盖K-12/本科/竞赛硕博，Step-by-Step教学协议+自适应出题+跨学科连接+2026前沿趋势（2026前沿技术升级）",
+      "initPrompt_zh": "我是一名高中生，想学生物但不知道从哪开始，帮我诊断一下水平并推荐学习路径",
+      "quickPrompts_zh": [
+        "帮我学生物，诊断水平并推荐学习路径",
+        "出道生物题目测试一下",
+        "分步讲解一个生物核心概念"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "63.3KB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "bio-pro",
+      "name": "bio-pro",
+      "displayName_zh": "万物生·进阶",
+      "displayName_en": "BioPro",
+      "profession_zh": "本科生物导师",
+      "version": "1.1.0",
+      "author": "李彦明",
+      "expertType": "agent",
+      "leadAgent": "bio-pro",
+      "agentCount": 1,
+      "agents": [
+        "bio-pro"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "bio-pro",
+          "name_zh": "万物生·进阶",
+          "name_en": "BioPro",
+          "profession_zh": "本科生物导师",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "本科生物",
+        "论文解析",
+        "实验设计"
+      ],
+      "oneLine_zh": "万物生·进阶：本科生物科学12门核心课程导师，含论文结构化分析与实验方案自动设计。（2026前沿技术升级）",
+      "initPrompt_zh": "帮我讲解CRISPR-Cas9基因编辑系统的分子机制，包含作用机理图",
+      "quickPrompts_zh": [
+        "帮我讲解CRISPR-Cas9基因编辑系统的分子机制，包含作用机理图",
+        "帮我设计一个完整的酶活性温度影响实验方案，含对照设计和数据分析方法",
+        "帮我分析这篇论文摘要的结构化解析和质量评估：[粘贴摘要]"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "35.8KB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "chem-grader",
+      "name": "chem-grader",
+      "displayName_zh": "化阅核",
+      "displayName_en": "ChemGrader",
+      "profession_zh": "化学阅卷评分官",
+      "version": "1.1.0",
+      "author": null,
+      "expertType": "agent",
+      "leadAgent": "chem-grader",
+      "agentCount": 1,
+      "agents": [
+        "chem-grader"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "chem-grader",
+          "name_zh": "化阅核",
+          "name_en": "Chem Grader",
+          "profession_zh": "化学阅卷评分官",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "化学阅卷",
+        "自动评分",
+        "实验评估"
+      ],
+      "oneLine_zh": "化学试卷智能评分专家，支持选择题自动批改、化学方程式等价验证、实验题分步评分和班级学情分析。（2026前沿技术升级）",
+      "initPrompt_zh": "批改这套化学试卷，标准答案和学生答案都在这里",
+      "quickPrompts_zh": [
+        "批改这套化学试卷，标准答案和学生答案都在这里",
+        "帮我看一下这个学生这次化学考试考得怎么样",
+        "我有一整班学生的化学试卷要批改"
+      ],
+      "embeddedSkills": [
+        "skill-chem-grader-workflow"
+      ],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "1.1MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "chem-master",
+      "name": "chem-master",
+      "displayName_zh": "炼金士",
+      "displayName_en": "化学ExpertTeam",
+      "profession_zh": "炼金士",
+      "version": "3.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "chem-master",
+      "agentCount": 6,
+      "agents": [
+        "chem-advanced",
+        "chem-grader",
+        "chem-master",
+        "chem-primary",
+        "chem-senior",
+        "chem-undergrad"
+      ],
+      "teamSize": 6,
+      "members": [
+        {
+          "id": "chem-master",
+          "name_zh": "炼金士",
+          "name_en": "chem-master",
+          "profession_zh": "主理人",
+          "role": "lead"
+        },
+        {
+          "id": "chem-primary",
+          "name_zh": "金初燃",
+          "name_en": "ChemIgnite",
+          "profession_zh": "初中化学导师",
+          "role": "member"
+        },
+        {
+          "id": "chem-senior",
+          "name_zh": "金粹华",
+          "name_en": "ChemRefine",
+          "profession_zh": "高中化学导师",
+          "role": "member"
+        },
+        {
+          "id": "chem-undergrad",
+          "name_zh": "金析微",
+          "name_en": "ChemAnalyze",
+          "profession_zh": "本科化学导师",
+          "role": "member"
+        },
+        {
+          "id": "chem-advanced",
+          "name_zh": "金极研",
+          "name_en": "ChemExtreme",
+          "profession_zh": "竞赛化学导师",
+          "role": "member"
+        },
+        {
+          "id": "chem-grader",
+          "name_zh": "化阅核",
+          "name_en": "ChemGrader",
+          "profession_zh": "化学阅卷评分官",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "化学教育",
+        "全学段课程",
+        "智能出题评分"
+      ],
+      "oneLine_zh": "化学全学段专家团，覆盖K-12/本科/竞赛硕博，Step-by-Step教学协议+自适应出题+跨学科连接+2026前沿趋势（2026前沿技术升级）",
+      "initPrompt_zh": "帮我学化学，诊断水平并推荐学习路径",
+      "quickPrompts_zh": [
+        "帮我学化学，诊断水平并推荐学习路径",
+        "出道化学题目测试一下",
+        "分步讲解一个化学核心概念"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "56.1KB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "chi-grader",
+      "name": "chi-grader",
+      "displayName_zh": "文阅卷",
+      "displayName_en": "ChiGrader",
+      "profession_zh": "语文阅卷评分官",
+      "version": "1.1.0",
+      "author": null,
+      "expertType": "agent",
+      "leadAgent": "chi-grader",
+      "agentCount": 1,
+      "agents": [
+        "chi-grader"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "chi-grader",
+          "name_zh": "文阅卷",
+          "name_en": "Chi Grader",
+          "profession_zh": "语文阅卷评分官",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "语文阅卷",
+        "自动评分",
+        "作文评估"
+      ],
+      "oneLine_zh": "语文试卷智能评分专家，支持选择题自动批改、古诗文默写精确匹配、阅读理解关键词评分、作文AI评估和班级学情分析（2026前沿技术升级）",
+      "initPrompt_zh": "批改这套语文试卷，标准答案和学生答案都在这里",
+      "quickPrompts_zh": [
+        "批改这套语文试卷，标准答案和学生答案都在这里",
+        "帮我看一下这个学生这次语文考试考得怎么样",
+        "我有一整班学生的语文试卷要批改"
+      ],
+      "embeddedSkills": [
+        "skill-chi-grader-workflow"
+      ],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "1.1MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "chinese-master",
+      "name": "chinese-master",
+      "displayName_zh": "锦心子",
+      "displayName_en": "语文ExpertTeam",
+      "profession_zh": "锦心子",
+      "version": "3.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "chinese-master",
+      "agentCount": 6,
+      "agents": [
+        "chi-advanced",
+        "chi-grader",
+        "chi-primary",
+        "chi-senior",
+        "chi-undergrad",
+        "chinese-master"
+      ],
+      "teamSize": 6,
+      "members": [
+        {
+          "id": "chinese-master",
+          "name_zh": "锦心子",
+          "name_en": "chinese-master",
+          "profession_zh": "主理人",
+          "role": "lead"
+        },
+        {
+          "id": "chi-primary",
+          "name_zh": "文启蒙",
+          "name_en": "ChiStart",
+          "profession_zh": "小学语文导师",
+          "role": "member"
+        },
+        {
+          "id": "chi-senior",
+          "name_zh": "文华章",
+          "name_en": "ChiProse",
+          "profession_zh": "中学语文导师",
+          "role": "member"
+        },
+        {
+          "id": "chi-undergrad",
+          "name_zh": "文精粹",
+          "name_en": "ChiScholar",
+          "profession_zh": "本科中文导师",
+          "role": "member"
+        },
+        {
+          "id": "chi-advanced",
+          "name_zh": "文深研",
+          "name_en": "ChiDeep",
+          "profession_zh": "硕博中文导师",
+          "role": "member"
+        },
+        {
+          "id": "chi-grader",
+          "name_zh": "文阅卷",
+          "name_en": "ChiGrader",
+          "profession_zh": "语文阅卷评分官",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "语文教育",
+        "全学段课程",
+        "智能出题评分"
+      ],
+      "oneLine_zh": "语文全学段专家团，覆盖K-12/本科/竞赛硕博，Step-by-Step教学协议+自适应出题+跨学科连接+2026前沿趋势（2026前沿技术升级）",
+      "initPrompt_zh": "帮我学语文，诊断水平并推荐学习路径",
+      "quickPrompts_zh": [
+        "帮我学语文，诊断水平并推荐学习路径",
+        "出道语文题目测试一下",
+        "分步讲解一个语文核心概念"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "48.0KB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "color-design-master",
+      "name": "color-design-master",
+      "displayName_zh": "色彩设计大师",
+      "displayName_en": "Color Design Master",
+      "profession_zh": "配色设计与视觉系统专家",
+      "version": "1.1.0",
+      "author": "IT Education Team",
+      "expertType": "agent",
+      "leadAgent": "color-design-master",
+      "agentCount": 1,
+      "agents": [
+        "color-design-master"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "color-design-master",
+          "name_zh": "色彩设计大师",
+          "name_en": "Color Design Master",
+          "profession_zh": "配色设计与视觉系统专家",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "配色体系设计",
+        "UI视觉设计",
+        "设计Token系统"
+      ],
+      "oneLine_zh": "竞赛级配色与视觉专家，专精教育类设计系统和无障碍色彩规范，为教学平台打造专业统一的配色方案（2026前沿技术升级）",
+      "initPrompt_zh": "帮我分析当前教学系统的配色方案，找出问题并给出升级方案",
+      "quickPrompts_zh": [
+        "帮我分析当前教学系统的配色方案，找出问题并给出升级方案",
+        "为Python教学平台创建完整的设计Token系统",
+        "设计一套竞赛级深色/浅色主题配色方案"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "980.8KB",
+      "categoryId": "01-ProductDesign",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "ebook-to-movie",
+      "name": "ebook-to-movie",
+      "displayName_zh": "电子书转电影",
+      "displayName_en": "Ebook to Movie",
+      "profession_zh": "AI 视频制作专家",
+      "version": "3.4.0",
+      "author": "李彦明",
+      "expertType": "agent",
+      "leadAgent": "ebook-to-movie",
+      "agentCount": 1,
+      "agents": [
+        "ebook-to-movie"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "ebook-to-movie",
+          "name_zh": "电子书转电影",
+          "name_en": "Ebook to Movie",
+          "profession_zh": "AI 视频制作专家",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "AI视频生成",
+        "电子书处理",
+        "自动发布"
+      ],
+      "oneLine_zh": "将电子书自动转化为电影级视频，支持AI配音、场景画面、Ken Burns特效、字幕，一键发布多平台（2026前沿技术升级）",
+      "initPrompt_zh": "帮我把这本小说转成赛博朋克风格视频",
+      "quickPrompts_zh": [
+        "帮我把这本小说转成赛博朋克风格视频",
+        "把这个txt小说做成带中文配音的电影",
+        "用这本epub的前3章生成预告片视频"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "19.8KB",
+      "categoryId": "06-ContentCreative",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "education-admin",
+      "name": "education-admin",
+      "displayName_zh": "教务智能体",
+      "displayName_en": "EduAdmin Ultimate",
+      "profession_zh": "学校全领域管理专家",
+      "version": "5.1.0",
+      "author": "李彦明",
+      "expertType": "agent",
+      "leadAgent": "education-admin",
+      "agentCount": 1,
+      "agents": [
+        "education-admin"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "education-admin",
+          "name_zh": "教务智能体",
+          "name_en": "EduAdmin Ultimate",
+          "profession_zh": "学校全领域管理专家",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "全部门覆盖",
+        "后勤与总务",
+        "校园全管理"
+      ],
+      "oneLine_zh": "学校全领域管理专家，覆盖教务/政教/总务/财务/人事/教科室/信息/团委等全部19个职能部门（2026前沿技术升级）",
+      "initPrompt_zh": "你好，我是教务智能体 v5.0，覆盖学校全部19个职能部门。请问你的部门和任务？",
+      "quickPrompts_zh": [
+        "你好，我是教务智能体 v5.0，覆盖学校全部19个职能部门。请问你的部门和任务？",
+        "我是总务处的，帮我做计算机教室固定资产盘点表。",
+        "我是教务处的，帮我制定七年级下学期教学计划。"
+      ],
+      "embeddedSkills": [
+        "education-admin-skills"
+      ],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "423.4KB",
+      "categoryId": "09-OperationsHR",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "eng-grader",
+      "name": "eng-grader",
+      "displayName_zh": "英阅卷",
+      "displayName_en": "EngGrader",
+      "profession_zh": "英语阅卷评分官",
+      "version": "1.1.0",
+      "author": null,
+      "expertType": "agent",
+      "leadAgent": "eng-grader",
+      "agentCount": 1,
+      "agents": [
+        "eng-grader"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "eng-grader",
+          "name_zh": "英阅卷",
+          "name_en": "Eng Grader",
+          "profession_zh": "英语阅卷评分官",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "英语阅卷",
+        "自动评分",
+        "写作评估"
+      ],
+      "oneLine_zh": "英语试卷智能评分专家，支持选择题自动批改、完形填空关键词匹配、阅读理解分步评分、书面表达评估和班级学情分析。（2026前沿技术升级）",
+      "initPrompt_zh": "批改这套英语试卷，标准答案和学生答案都在这里",
+      "quickPrompts_zh": [
+        "批改这套英语试卷，标准答案和学生答案都在这里",
+        "帮我看一下这个学生这次英语考试考得怎么样",
+        "我有一整班学生的英语试卷要批改"
+      ],
+      "embeddedSkills": [
+        "skill-eng-grader-workflow"
+      ],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "1.1MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "english-master",
+      "name": "english-master",
+      "displayName_zh": "通语者",
+      "displayName_en": "英语ExpertTeam",
+      "profession_zh": "通语者",
+      "version": "3.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "english-master",
+      "agentCount": 6,
+      "agents": [
+        "eng-advanced",
+        "eng-grader",
+        "eng-primary",
+        "eng-senior",
+        "eng-undergrad",
+        "english-master"
+      ],
+      "teamSize": 6,
+      "members": [
+        {
+          "id": "english-master",
+          "name_zh": "通语者",
+          "name_en": "english-master",
+          "profession_zh": "主理人",
+          "role": "lead"
+        },
+        {
+          "id": "eng-primary",
+          "name_zh": "言启蒙",
+          "name_en": "EngStart",
+          "profession_zh": "基础英语导师",
+          "role": "member"
+        },
+        {
+          "id": "eng-senior",
+          "name_zh": "言博采",
+          "name_en": "EngMaster",
+          "profession_zh": "高中英语导师",
+          "role": "member"
+        },
+        {
+          "id": "eng-undergrad",
+          "name_zh": "言精研",
+          "name_en": "EngScholar",
+          "profession_zh": "本科语言文学导师",
+          "role": "member"
+        },
+        {
+          "id": "eng-advanced",
+          "name_zh": "言达意",
+          "name_en": "EngBridge",
+          "profession_zh": "翻译跨文化导师",
+          "role": "member"
+        },
+        {
+          "id": "eng-grader",
+          "name_zh": "英阅卷",
+          "name_en": "EngGrader",
+          "profession_zh": "英语阅卷评分官",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "英语教育",
+        "全学段课程",
+        "智能出题评分"
+      ],
+      "oneLine_zh": "英语全学段专家团，覆盖K-12/本科/竞赛硕博，Step-by-Step教学协议+自适应出题+跨学科连接+2026前沿趋势（2026前沿技术升级）",
+      "initPrompt_zh": "帮我学英语，诊断水平并推荐学习路径",
+      "quickPrompts_zh": [
+        "帮我学英语，诊断水平并推荐学习路径",
+        "出道英语题目测试一下",
+        "分步讲解一个英语核心概念"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "48.6KB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "geo-grader",
+      "name": "geo-grader",
+      "displayName_zh": "地阅评",
+      "displayName_en": "GeoGrader",
+      "profession_zh": "地理阅卷评分官",
+      "version": "1.1.0",
+      "author": null,
+      "expertType": "agent",
+      "leadAgent": "geo-grader",
+      "agentCount": 1,
+      "agents": [
+        "geo-grader"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "geo-grader",
+          "name_zh": "地阅评",
+          "name_en": "Geo Grader",
+          "profession_zh": "地理阅卷评分官",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "地理阅卷",
+        "自动评分",
+        "读图评估"
+      ],
+      "oneLine_zh": "地理试卷智能评分专家，支持选择题自动批改、读图分析题关键词匹配、综合题分步评分和班级学情分析。（2026前沿技术升级）",
+      "initPrompt_zh": "批改这套地理试卷，标准答案和学生答案都在这里",
+      "quickPrompts_zh": [
+        "批改这套地理试卷，标准答案和学生答案都在这里",
+        "帮我看一下这个学生这次地理考试考得怎么样",
+        "我有一整班学生的地理试卷要批改"
+      ],
+      "embeddedSkills": [
+        "skill-geo-grader-workflow"
+      ],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "1.1MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "geo-master",
+      "name": "geo-master",
+      "displayName_zh": "山海客",
+      "displayName_en": "地理ExpertTeam",
+      "profession_zh": "山海客",
+      "version": "3.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "geo-master",
+      "agentCount": 6,
+      "agents": [
+        "geo-advanced",
+        "geo-grader",
+        "geo-master",
+        "geo-primary",
+        "geo-senior",
+        "geo-undergrad"
+      ],
+      "teamSize": 6,
+      "members": [
+        {
+          "id": "geo-master",
+          "name_zh": "山海客",
+          "name_en": "geo-master",
+          "profession_zh": "主理人",
+          "role": "lead"
+        },
+        {
+          "id": "geo-primary",
+          "name_zh": "丘初识",
+          "name_en": "GeoHill",
+          "profession_zh": "初中地理导师",
+          "role": "member"
+        },
+        {
+          "id": "geo-senior",
+          "name_zh": "峰高览",
+          "name_en": "GeoPeak",
+          "profession_zh": "高中地理导师",
+          "role": "member"
+        },
+        {
+          "id": "geo-undergrad",
+          "name_zh": "峦深探",
+          "name_en": "GeoTerra",
+          "profession_zh": "本科地理导师",
+          "role": "member"
+        },
+        {
+          "id": "geo-advanced",
+          "name_zh": "极远眺",
+          "name_en": "GeoRemote",
+          "profession_zh": "硕博前沿导师",
+          "role": "member"
+        },
+        {
+          "id": "geo-grader",
+          "name_zh": "地阅评",
+          "name_en": "GeoGrader",
+          "profession_zh": "地理阅卷评分官",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "地理教育",
+        "全学段课程",
+        "智能出题评分"
+      ],
+      "oneLine_zh": "地理全学段专家团，覆盖K-12/本科/竞赛硕博，Step-by-Step教学协议+自适应出题+跨学科连接+2026前沿趋势（2026前沿技术升级）",
+      "initPrompt_zh": "帮我学地理，诊断水平并推荐学习路径",
+      "quickPrompts_zh": [
+        "帮我学地理，诊断水平并推荐学习路径",
+        "出道地理题目测试一下",
+        "分步讲解一个地理核心概念"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "49.9KB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "gewu-zhidao",
+      "name": "gewu-zhidao",
+      "displayName_zh": "格物致知科研智库",
+      "displayName_en": "Gewu Zhidao Research Expert Team",
+      "profession_zh": "格物致知科研智库",
+      "version": "1.1.0",
+      "author": "Agnes AI Team",
+      "expertType": "team",
+      "leadAgent": "gewu-zhidao-team-lead",
+      "agentCount": 6,
+      "agents": [
+        "bi-zhong-zheng",
+        "gewu-zhidao-team-lead",
+        "shu-ju-fen-xi",
+        "wen-xian-da-shi",
+        "xuan-tan-ce",
+        "zuo-pin-jiao"
+      ],
+      "teamSize": 6,
+      "members": [
+        {
+          "id": "gewu-zhidao-team-lead",
+          "name_zh": "研究主编",
+          "name_en": "Chief Research Editor",
+          "profession_zh": "研究主编",
+          "role": "lead"
+        },
+        {
+          "id": "xuan-tan-ce",
+          "name_zh": "宣澄策",
+          "name_en": "Xuanchengce",
+          "profession_zh": "选题策略策划师",
+          "role": "member"
+        },
+        {
+          "id": "wen-xian-da-shi",
+          "name_zh": "闻典大师",
+          "name_en": "Wen Daoshi",
+          "profession_zh": "文献检索大师",
+          "role": "member"
+        },
+        {
+          "id": "shu-ju-fen-xi",
+          "name_zh": "数掘精研",
+          "name_en": "Shuju Fenxi",
+          "profession_zh": "数据分析专家",
+          "role": "member"
+        },
+        {
+          "id": "bi-zhong-zheng",
+          "name_zh": "笔衷证",
+          "name_en": "Bi Zhongzheng",
+          "profession_zh": "学术写作策略师",
+          "role": "member"
+        },
+        {
+          "id": "zuo-pin-jiao",
+          "name_zh": "酌精校",
+          "name_en": "Zuojingjiao",
+          "profession_zh": "学术品质校验师",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "课题申报",
+        "论文写作",
+        "数据分析"
+      ],
+      "oneLine_zh": "全栈科研智库，覆盖课题研究全流程与论文写作全环节，从选题立项到结项发表一站式赋能（2026前沿技术升级）",
+      "initPrompt_zh": "帮我设计一个教育研究课题的选题方案",
+      "quickPrompts_zh": [
+        "帮我设计一个教育研究课题的选题方案",
+        "我需要写一篇关于AI赋能教育的学术论文",
+        "请帮我做CNKI文献检索和综述框架"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "1.4MB",
+      "categoryId": "04-DataAI",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "goldstrategy-guild",
+      "name": "goldstrategy-guild",
+      "displayName_zh": "金策宗师团",
+      "displayName_en": "Goldstrategy Guild",
+      "profession_zh": "金策宗师团",
+      "version": "4.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "goldstrategy-guild-team-lead",
+      "agentCount": 9,
+      "agents": [
+        "goldstrategy-guild-team-lead",
+        "guardian-executor",
+        "macro-analyst",
+        "market-hunter",
+        "operations-officer",
+        "quant-architect",
+        "quant-oracle",
+        "research-strategist",
+        "risk-auditor"
+      ],
+      "teamSize": 9,
+      "members": [
+        {
+          "id": "goldstrategy-guild-team-lead",
+          "name_zh": "策金尊",
+          "name_en": "Goldstrategy Master",
+          "profession_zh": "首席投资官",
+          "role": "lead"
+        },
+        {
+          "id": "market-hunter",
+          "name_zh": "猎场司",
+          "name_en": "Market Tracker",
+          "profession_zh": "技术分析专员",
+          "role": "member"
+        },
+        {
+          "id": "research-strategist",
+          "name_zh": "研策师",
+          "name_en": "Research Strategist",
+          "profession_zh": "量化研究员",
+          "role": "member"
+        },
+        {
+          "id": "macro-analyst",
+          "name_zh": "观潮人",
+          "name_en": "Macro Observer",
+          "profession_zh": "宏观策略分析师",
+          "role": "member"
+        },
+        {
+          "id": "quant-oracle",
+          "name_zh": "算天机",
+          "name_en": "Quant Oracle",
+          "profession_zh": "投资组合与风险分析",
+          "role": "member"
+        },
+        {
+          "id": "guardian-executor",
+          "name_zh": "金刚卫",
+          "name_en": "Guardian Executor",
+          "profession_zh": "交易执行员",
+          "role": "member"
+        },
+        {
+          "id": "risk-auditor",
+          "name_zh": "审度司",
+          "name_en": "Risk Auditor",
+          "profession_zh": "独立风险官",
+          "role": "member"
+        },
+        {
+          "id": "quant-architect",
+          "name_zh": "筑码师",
+          "name_en": "Quant Architect",
+          "profession_zh": "量化开发与架构师",
+          "role": "member"
+        },
+        {
+          "id": "operations-officer",
+          "name_zh": "度支司",
+          "name_en": "Operations Officer",
+          "profession_zh": "运营与合规官",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "机构级量化",
+        "多策略融合",
+        "自进化AI"
+      ],
+      "oneLine_zh": "机构级自进化量化交易系统 v4.0，9大角色5部门全链路覆盖，Walk-Forward自进化引擎驱动参数持续优化，12层风控+操盘手心理模拟，专注黄金智能交易（2026前沿技术升级）",
+      "initPrompt_zh": "策金尊在此，金策宗师团全体就位。五大部门九大角色听候调遣，请下达交易任务。",
+      "quickPrompts_zh": [
+        "策金尊在此，金策宗师团全体就位。五大部门九大角色听候调遣，请下达交易任务。",
+        "运行完整交易周期：研究→信号→风控→执行→结算。",
+        "生成周度P&L报表，含业绩归因和风险分析。"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "7.8MB",
+      "categoryId": "08-FinanceInvestment",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "his-grader",
+      "name": "his-grader",
+      "displayName_zh": "史阅评",
+      "displayName_en": "HisGrader",
+      "profession_zh": "历史阅卷评分官",
+      "version": "1.2.0",
+      "author": null,
+      "expertType": "agent",
+      "leadAgent": "his-grader",
+      "agentCount": 1,
+      "agents": [
+        "his-grader"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "his-grader",
+          "name_zh": "史阅评",
+          "name_en": "His Grader",
+          "profession_zh": "历史阅卷评分官",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "历史阅卷",
+        "自动评分",
+        "材料分析"
+      ],
+      "oneLine_zh": "历史试卷智能评分专家，支持选择题自动批改、材料解析题关键词匹配、论述题观点逻辑评分和班级学情分析（2026前沿技术升级）",
+      "initPrompt_zh": "批改这套历史试卷，标准答案和学生答案都在这里",
+      "quickPrompts_zh": [
+        "批改这套历史试卷，标准答案和学生答案都在这里",
+        "帮我看一下这个学生这次历史考试考得怎么样",
+        "我有一整班学生的历史试卷要批改"
+      ],
+      "embeddedSkills": [
+        "skill-his-grader-workflow"
+      ],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "1.1MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "history-master",
+      "name": "history-master",
+      "displayName_zh": "史鉴君",
+      "displayName_en": "历史ExpertTeam",
+      "profession_zh": "史鉴君",
+      "version": "3.2.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "history-master",
+      "agentCount": 6,
+      "agents": [
+        "his-advanced",
+        "his-grader",
+        "his-primary",
+        "his-senior",
+        "his-undergrad",
+        "history-master"
+      ],
+      "teamSize": 6,
+      "members": [
+        {
+          "id": "history-master",
+          "name_zh": "史鉴君",
+          "name_en": "history-master",
+          "profession_zh": "主理人",
+          "role": "lead"
+        },
+        {
+          "id": "his-primary",
+          "name_zh": "史初知",
+          "name_en": "HisIntro",
+          "profession_zh": "初中历史导师",
+          "role": "member"
+        },
+        {
+          "id": "his-senior",
+          "name_zh": "史博闻",
+          "name_en": "HisWide",
+          "profession_zh": "高中历史导师",
+          "role": "member"
+        },
+        {
+          "id": "his-undergrad",
+          "name_zh": "史深究",
+          "name_en": "HisDeep",
+          "profession_zh": "本科历史导师",
+          "role": "member"
+        },
+        {
+          "id": "his-advanced",
+          "name_zh": "史前沿",
+          "name_en": "HisFrontier",
+          "profession_zh": "硕博前沿导师",
+          "role": "member"
+        },
+        {
+          "id": "his-grader",
+          "name_zh": "史阅评",
+          "name_en": "HisGrader",
+          "profession_zh": "历史阅卷评分官",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "历史教育",
+        "全学段课程",
+        "智能出题评分"
+      ],
+      "oneLine_zh": "历史全学段专家团，覆盖K-12/本科/竞赛硕博，Step-by-Step教学协议+自适应出题+跨学科连接+2026前沿趋势（2026前沿技术升级）",
+      "initPrompt_zh": "帮我学历史，诊断水平并推荐学习路径",
+      "quickPrompts_zh": [
+        "帮我学历史，诊断水平并推荐学习路径",
+        "出道历史题目测试一下",
+        "分步讲解一个历史核心概念"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "49.7KB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "it-edu-team",
+      "name": "it-edu-team",
+      "displayName_zh": "码智君",
+      "displayName_en": "IT Education Team V5",
+      "profession_zh": "码智君",
+      "version": "6.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "it-edu-team-team-lead",
+      "agentCount": 8,
+      "agents": [
+        "color-design-master",
+        "design-master",
+        "it-edu-team-team-lead",
+        "it-grader",
+        "ke-code-ta",
+        "pei-env-engineer",
+        "shen-exam-designer",
+        "stem-integrator"
+      ],
+      "teamSize": 8,
+      "members": [
+        {
+          "id": "it-edu-team-team-lead",
+          "name_zh": "码智君",
+          "name_en": "Cheng Daosi V4",
+          "profession_zh": "信息科技主理人",
+          "role": "lead"
+        },
+        {
+          "id": "ke-code-ta",
+          "name_zh": "码编程",
+          "name_en": "Ke Zhima V4",
+          "profession_zh": "编程导师",
+          "role": "member"
+        },
+        {
+          "id": "shen-exam-designer",
+          "name_zh": "码出题",
+          "name_en": "Shen Kaoheng V4",
+          "profession_zh": "出题测评官",
+          "role": "member"
+        },
+        {
+          "id": "pei-env-engineer",
+          "name_zh": "码配置",
+          "name_en": "Pei Jingshi V4",
+          "profession_zh": "系统配置师",
+          "role": "member"
+        },
+        {
+          "id": "design-master",
+          "name_zh": "码设计",
+          "name_en": "Chen Sheji",
+          "profession_zh": "教学设计师",
+          "role": "member"
+        },
+        {
+          "id": "stem-integrator",
+          "name_zh": "码融合",
+          "name_en": "Rong Guantong",
+          "profession_zh": "跨学科融合师",
+          "role": "member"
+        },
+        {
+          "id": "color-design-master",
+          "name_zh": "码配色",
+          "name_en": "Cheng Peiling",
+          "profession_zh": "配色与视觉设计师",
+          "role": "member"
+        },
+        {
+          "id": "it-grader",
+          "name_zh": "信阅卷",
+          "name_en": "ITGrader",
+          "profession_zh": "信息科技阅卷评分官",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "课程设计",
+        "Python编程教学",
+        "跨学科STEM"
+      ],
+      "oneLine_zh": "信息科技全学段专家团V6.0，融合学习科学引擎、AI分级教学与自适应测评，前沿技术直达课堂（2026前沿技术升级）",
+      "initPrompt_zh": "我需要一堂七年级《互联网应用与创新》的优质课教案，配套课件和试题",
+      "quickPrompts_zh": [
+        "我需要一堂七年级《互联网应用与创新》的优质课教案，配套课件和试题",
+        "设计一个物联网跨学科项目，融合传感器数据采集与分析，全套教学包",
+        "帮我设计一个八年级智慧校园STEM项目，含课件和评价量规"
+      ],
+      "embeddedSkills": [
+        "it-edu-tools"
+      ],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "7.7MB",
+      "categoryId": "09-OperationsHR",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "it-grader",
+      "name": "it-grader",
+      "displayName_zh": "信阅卷",
+      "displayName_en": "ITGrader",
+      "profession_zh": "信息科技阅卷评分官",
+      "version": "1.1.0",
+      "author": null,
+      "expertType": "agent",
+      "leadAgent": "it-grader",
+      "agentCount": 1,
+      "agents": [
+        "it-grader"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "it-grader",
+          "name_zh": "信阅卷",
+          "name_en": "It Grader",
+          "profession_zh": "信息科技阅卷评分官",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "信息科技阅卷",
+        "自动评分",
+        "编程评估"
+      ],
+      "oneLine_zh": "信息科技试卷智能评分专家，支持选择题自动批改、编程题代码结果验证、操作题步骤评分和班级学情分析（2026前沿技术升级）",
+      "initPrompt_zh": "批改这套信息科技试卷，标准答案和学生答案都在这里",
+      "quickPrompts_zh": [
+        "批改这套信息科技试卷，标准答案和学生答案都在这里",
+        "帮我看一下这个学生这次信息科技考试考得怎么样",
+        "我有一整班学生的信息科技试卷要批改"
+      ],
+      "embeddedSkills": [
+        "skill-it-grader-workflow"
+      ],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "1.2MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "jiao-lian-zhong-shu",
+      "name": "jiao-lian-zhong-shu",
+      "displayName_zh": "教联中枢",
+      "displayName_en": "Jiao Lian Hub",
+      "profession_zh": "教联中枢",
+      "version": "1.0.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "jiao-lian-zhong-shu-team-lead",
+      "agentCount": 1,
+      "agents": [
+        "jiao-lian-zhong-shu-team-lead"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "jiao-lian-zhong-shu-team-lead",
+          "name_zh": "教联中枢",
+          "name_en": "Jiao Lian Hub",
+          "profession_zh": "教育IP总控调度师",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "多学科调度",
+        "内容IP矩阵",
+        "教育变现操盘"
+      ],
+      "oneLine_zh": "教育IP总控中枢：调度11学科团日产内容，多平台分发，数据闭环变现。",
+      "initPrompt_zh": "生成今天的《教联日报》：从11个学科团选题2个，产出2份教学设计+2套5题小测+2条30秒视频号脚本，整理分发到公众号草稿和OpenMAIC沉浸课堂",
+      "quickPrompts_zh": [
+        "生成今天的《教联日报》：从11个学科团选题2个，产出2份教学设计+2套5题小测+2条30秒视频号脚本，整理分发到公众号草稿和OpenMAIC沉浸课堂",
+        "排一份7天选题排期表：信息科技为主力，生物/化学/地理/英语/数学/物理轮值，每日2学科×2类内容上限，选题对齐校历与考试日历",
+        "复盘上周数据（公众号阅读量/视频号播放/OpenMAIC测验成绩），告诉我下周该加大哪个学科哪类内容，并给出理由"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "1.1MB",
+      "categoryId": "09-OperationsHR",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "math-all-domain",
+      "name": "math-all-domain",
+      "displayName_zh": "数算子",
+      "displayName_en": "Math All-Domain Expert Team",
+      "profession_zh": "数算子",
+      "version": "1.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "math-all-domain-team-lead",
+      "agentCount": 9,
+      "agents": [
+        "classical-math",
+        "graduate-math",
+        "international-math",
+        "junior-math",
+        "math-all-domain-team-lead",
+        "math-grader",
+        "primary-math",
+        "senior-math",
+        "undergrad-math"
+      ],
+      "teamSize": 9,
+      "members": [
+        {
+          "id": "math-all-domain-team-lead",
+          "name_zh": "数算子",
+          "name_en": "Cheng Shu Tong",
+          "profession_zh": "数学主理人",
+          "role": "lead"
+        },
+        {
+          "id": "primary-math",
+          "name_zh": "数启蒙",
+          "name_en": "Cheng Xiao Suan",
+          "profession_zh": "小学数学导师",
+          "role": "member"
+        },
+        {
+          "id": "junior-math",
+          "name_zh": "数筑基",
+          "name_en": "Cheng Zhong Dai",
+          "profession_zh": "初中数学导师",
+          "role": "member"
+        },
+        {
+          "id": "senior-math",
+          "name_zh": "数精进",
+          "name_en": "Cheng Gao Han",
+          "profession_zh": "高中数学导师",
+          "role": "member"
+        },
+        {
+          "id": "undergrad-math",
+          "name_zh": "数深研",
+          "name_en": "Cheng Wei Ji",
+          "profession_zh": "本科数学导师",
+          "role": "member"
+        },
+        {
+          "id": "graduate-math",
+          "name_zh": "数探微",
+          "name_en": "Cheng Yan Xi",
+          "profession_zh": "硕博数学导师",
+          "role": "member"
+        },
+        {
+          "id": "classical-math",
+          "name_zh": "数溯源",
+          "name_en": "Cheng Jiu Zhang",
+          "profession_zh": "古典数学导师",
+          "role": "member"
+        },
+        {
+          "id": "international-math",
+          "name_zh": "数纵横",
+          "name_en": "Cheng Huan Qiu",
+          "profession_zh": "国际数学导师",
+          "role": "member"
+        },
+        {
+          "id": "math-grader",
+          "name_zh": "数阅卷",
+          "name_en": "MathGrader",
+          "profession_zh": "数学阅卷评分官",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "数学教育",
+        "全学段课程",
+        "数学解题"
+      ],
+      "oneLine_zh": "数学全学段专家团，覆盖K-12/本科/竞赛硕博，Step-by-Step教学协议+自适应出题+跨学科连接+2026前沿趋势（2026前沿技术升级）",
+      "initPrompt_zh": "请帮我解答一个数学问题，或讲解某个数学概念。",
+      "quickPrompts_zh": [
+        "请帮我解答一个数学问题，或讲解某个数学概念。",
+        "讲解勾股定理及其证明方法",
+        "中国高中数学与国外高中数学的主要区别是什么？"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "10.2MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "math-grader",
+      "name": "math-grader",
+      "displayName_zh": "数阅卷",
+      "displayName_en": "MathGrader",
+      "profession_zh": "数学阅卷评分官",
+      "version": "1.2.0",
+      "author": null,
+      "expertType": "agent",
+      "leadAgent": "math-grader",
+      "agentCount": 1,
+      "agents": [
+        "math-grader"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "math-grader",
+          "name_zh": "数阅卷",
+          "name_en": "Math Grader",
+          "profession_zh": "数学阅卷评分官",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "数学阅卷",
+        "自动评分",
+        "分步评分"
+      ],
+      "oneLine_zh": "数学试卷智能评分专家，支持选择题自动批改、公式等价验证、计算题分步评分、几何证明步骤评分和班级学情分析。（2026前沿技术升级）",
+      "initPrompt_zh": "批改这套数学试卷，标准答案和学生答案都在这里",
+      "quickPrompts_zh": [
+        "批改这套数学试卷，标准答案和学生答案都在这里",
+        "帮我看一下这个学生这次数学考试考得怎么样",
+        "我有一整班学生的数学试卷要批改"
+      ],
+      "embeddedSkills": [
+        "skill-math-grader-workflow"
+      ],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "1.1MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "mor-grader",
+      "name": "mor-grader",
+      "displayName_zh": "德阅判",
+      "displayName_en": "MorGrader",
+      "profession_zh": "道法阅卷评分官",
+      "version": "1.1.0",
+      "author": null,
+      "expertType": "agent",
+      "leadAgent": "mor-grader",
+      "agentCount": 1,
+      "agents": [
+        "mor-grader"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "mor-grader",
+          "name_zh": "德阅判",
+          "name_en": "Mor Grader",
+          "profession_zh": "道法阅卷评分官",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "道法阅卷",
+        "自动评分",
+        "观点分析"
+      ],
+      "oneLine_zh": "道法试卷智能评分专家，支持选择题自动批改、材料分析题观点匹配、辨析题逻辑评分和班级学情分析（2026前沿技术升级）",
+      "initPrompt_zh": "批改这套道法试卷，标准答案和学生答案都在这里",
+      "quickPrompts_zh": [
+        "批改这套道法试卷，标准答案和学生答案都在这里",
+        "帮我看一下这个学生这次道法考试考得怎么样",
+        "我有一整班学生的道法试卷要批改"
+      ],
+      "embeddedSkills": [
+        "skill-mor-grader-workflow"
+      ],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "1.0MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "morality-master",
+      "name": "morality-master",
+      "displayName_zh": "明辨君",
+      "displayName_en": "道法ExpertTeam",
+      "profession_zh": "明辨君",
+      "version": "3.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "morality-master",
+      "agentCount": 6,
+      "agents": [
+        "mor-advanced",
+        "mor-grader",
+        "mor-primary",
+        "mor-senior",
+        "mor-undergrad",
+        "morality-master"
+      ],
+      "teamSize": 6,
+      "members": [
+        {
+          "id": "morality-master",
+          "name_zh": "明辨君",
+          "name_en": "morality-master",
+          "profession_zh": "主理人",
+          "role": "lead"
+        },
+        {
+          "id": "mor-primary",
+          "name_zh": "道启蒙",
+          "name_en": "MorStart",
+          "profession_zh": "小学道法导师",
+          "role": "member"
+        },
+        {
+          "id": "mor-senior",
+          "name_zh": "道明理",
+          "name_en": "MorReason",
+          "profession_zh": "中学政治导师",
+          "role": "member"
+        },
+        {
+          "id": "mor-undergrad",
+          "name_zh": "道博识",
+          "name_en": "MorScholar",
+          "profession_zh": "本科政治导师",
+          "role": "member"
+        },
+        {
+          "id": "mor-advanced",
+          "name_zh": "道深究",
+          "name_en": "MorDeep",
+          "profession_zh": "硕博政治导师",
+          "role": "member"
+        },
+        {
+          "id": "mor-grader",
+          "name_zh": "德阅判",
+          "name_en": "MorGrader",
+          "profession_zh": "道法阅卷评分官",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "道法教育",
+        "全学段课程",
+        "智能出题评分"
+      ],
+      "oneLine_zh": "道法全学段专家团，覆盖K-12/本科/竞赛硕博，Step-by-Step教学协议+自适应出题+跨学科连接+2026前沿趋势（2026前沿技术升级）",
+      "initPrompt_zh": "帮我学道法，诊断水平并推荐学习路径",
+      "quickPrompts_zh": [
+        "帮我学道法，诊断水平并推荐学习路径",
+        "出道道法题目测试一下",
+        "分步讲解一个道法核心概念"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "46.1KB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "mt5-ea-expert",
+      "name": "mt5-ea-expert",
+      "displayName_zh": "MT5 EA编程专家",
+      "displayName_en": "MT5 EA Dev Expert",
+      "profession_zh": "MT5智能交易系统开发工程师",
+      "version": "1.1.0",
+      "author": "李彦明",
+      "expertType": "agent",
+      "leadAgent": "mt5-ea-expert",
+      "agentCount": 1,
+      "agents": [
+        "mt5-ea-expert"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "mt5-ea-expert",
+          "name_zh": "MT5 EA编程专家",
+          "name_en": "MT5 EA Dev Expert",
+          "profession_zh": "MT5智能交易系统开发工程师",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "MQL5编程",
+        "EA策略开发",
+        "量化交易"
+      ],
+      "oneLine_zh": "全栈MT5 EA策略开发专家，精通MQL5编程、风控系统设计、供需区域交易、多时间框架分析，交付带完整安全护栏的生产级EA代码（2026前沿技术升级）",
+      "initPrompt_zh": "请描述你的交易策略需求，例如：交易品种、时间框架、入场信号（均线交叉/RSI超卖/供需区回测等）、止损方式、仓位管理偏好。我会将其转化为完整的 MQL5 EA 代码。",
+      "quickPrompts_zh": [
+        "帮我写一个基于EMA交叉+ADX趋势过滤+ATR跟踪止损的MT5 EA",
+        "给我的EA加上凯利公式仓位管理和日亏损熔断保护",
+        "检查这个EA代码的Bug、前视偏差和MQL5规范违规"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "406.9KB",
+      "categoryId": "08-FinanceInvestment",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "music-craft-studio",
+      "name": "music-craft-studio",
+      "displayName_zh": "音律工坊",
+      "displayName_en": "The Sonic Workshop",
+      "profession_zh": "音律工坊",
+      "version": "2.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "music-craft-studio-team-lead",
+      "agentCount": 7,
+      "agents": [
+        "arrangement-dreamweaver",
+        "lyric-melody-architect",
+        "mixing-mastering-engineer",
+        "music-craft-studio-team-lead",
+        "music-theory-counselor",
+        "sound-design-alchemist",
+        "vocal-synthesis-artist"
+      ],
+      "teamSize": 7,
+      "members": [
+        {
+          "id": "music-craft-studio-team-lead",
+          "name_zh": "乐统筹",
+          "name_en": "Yue Tongchou",
+          "profession_zh": "音乐项目总监",
+          "role": "lead"
+        },
+        {
+          "id": "lyric-melody-architect",
+          "name_zh": "词妙笔",
+          "name_en": "Ci Miaobi",
+          "profession_zh": "词曲创作师",
+          "role": "member"
+        },
+        {
+          "id": "arrangement-dreamweaver",
+          "name_zh": "编梦师",
+          "name_en": "Bian Mengshi",
+          "profession_zh": "编曲配器师",
+          "role": "member"
+        },
+        {
+          "id": "vocal-synthesis-artist",
+          "name_zh": "声灵韵",
+          "name_en": "Sheng Lingyun",
+          "profession_zh": "AI歌手演唱师",
+          "role": "member"
+        },
+        {
+          "id": "mixing-mastering-engineer",
+          "name_zh": "混天工",
+          "name_en": "Hun Tiangong",
+          "profession_zh": "混音母带师",
+          "role": "member"
+        },
+        {
+          "id": "sound-design-alchemist",
+          "name_zh": "响幻境",
+          "name_en": "Xiang Huanjing",
+          "profession_zh": "音效造梦师",
+          "role": "member"
+        },
+        {
+          "id": "music-theory-counselor",
+          "name_zh": "律宗源",
+          "name_en": "Lu Zongyuan",
+          "profession_zh": "乐理分析顾问",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "AI音乐制作",
+        "全流程歌曲创作",
+        "音频后期处理"
+      ],
+      "oneLine_zh": "全栈AI音乐制作专家团，覆盖词曲、编曲、AI演唱、混音母带、音效与乐理六大领域，一站式完成音乐制作（2026前沿技术升级）",
+      "initPrompt_zh": "你好，我是音律工坊主理人乐统筹。想要创作一首歌？告诉我你的想法：什么风格、什么主题、有什么参考曲目？我调度团队为你从词曲编唱混一条龙搞定。",
+      "quickPrompts_zh": [
+        "你好，我是音律工坊主理人乐统筹。想要创作一首歌？告诉我你的想法：什么风格、什么主题、有什么参考曲目？我调度团队为你从词曲编唱混一条龙搞定。",
+        "帮我做一首Lo-Fi Hip-Hop风格的音乐，要chill氛围、女声演唱、90BPM、F大调，从词曲到成品完整制作。",
+        "分析一下这个乐理问题：C小调布鲁斯进行中，用哪些和弦最合适？"
+      ],
+      "embeddedSkills": [],
+      "references": [
+        "shared-standards.md",
+        "tech-glossary.md"
+      ],
+      "hasSettings": true,
+      "sizeHuman": "10.4MB",
+      "categoryId": "06-ContentCreative",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "physics-grader",
+      "name": "physics-grader",
+      "displayName_zh": "格阅卷",
+      "displayName_en": "Ge Yuejuan",
+      "profession_zh": "物理阅卷评分官",
+      "version": "1.1.0",
+      "author": null,
+      "expertType": "agent",
+      "leadAgent": "physics-grader",
+      "agentCount": 1,
+      "agents": [
+        "physics-grader"
+      ],
+      "teamSize": 1,
+      "members": [
+        {
+          "id": "physics-grader",
+          "name_zh": "格阅卷",
+          "name_en": "Ge Yuejuan",
+          "profession_zh": "物理阅卷评分官",
+          "role": "lead"
+        }
+      ],
+      "tags_zh": [
+        "物理阅卷",
+        "自动评分",
+        "学情分析"
+      ],
+      "oneLine_zh": "物理试卷智能评分专家，支持选择题自动批改、计算题分步评分、实验题过程评估和班级学情分析。（2026前沿技术升级）",
+      "initPrompt_zh": "批改这套物理试卷，包含计算题和实验题的分步评分",
+      "quickPrompts_zh": [
+        "批改这套物理试卷，标准答案和学生答案都在这里",
+        "帮我看一下这个学生这次考试考得怎么样",
+        "我有一整班学生的试卷要批改，文件夹路径是E:\\期末试卷\\"
+      ],
+      "embeddedSkills": [
+        "skill-physics-grader-workflow"
+      ],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "2.2MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "physics-omnibus",
+      "name": "physics-omnibus",
+      "displayName_zh": "格物君",
+      "displayName_en": "Physics Omnibus Consortium",
+      "profession_zh": "格物君",
+      "version": "1.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "physics-omnibus-team-lead",
+      "agentCount": 6,
+      "agents": [
+        "physics-experimenter",
+        "physics-grader",
+        "physics-historian",
+        "physics-omnibus-team-lead",
+        "physics-problem-solver",
+        "physics-theorist"
+      ],
+      "teamSize": 6,
+      "members": [
+        {
+          "id": "physics-omnibus-team-lead",
+          "name_zh": "格物君",
+          "name_en": "Li Guantong",
+          "profession_zh": "物理主理人",
+          "role": "lead"
+        },
+        {
+          "id": "physics-theorist",
+          "name_zh": "格理论",
+          "name_en": "Li Wanli",
+          "profession_zh": "理论物理导师",
+          "role": "member"
+        },
+        {
+          "id": "physics-experimenter",
+          "name_zh": "格实验",
+          "name_en": "Fan Zhenzhi",
+          "profession_zh": "实验物理导师",
+          "role": "member"
+        },
+        {
+          "id": "physics-historian",
+          "name_zh": "格历史",
+          "name_en": "Shi Mingzhi",
+          "profession_zh": "物理学史导师",
+          "role": "member"
+        },
+        {
+          "id": "physics-problem-solver",
+          "name_zh": "格解题",
+          "name_en": "Ke Shanjie",
+          "profession_zh": "物理习题导师",
+          "role": "member"
+        },
+        {
+          "id": "physics-grader",
+          "name_zh": "格阅卷",
+          "name_en": "Physics Grader",
+          "profession_zh": "物理阅卷评分官",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "物理教学",
+        "物理实验",
+        "物理学史"
+      ],
+      "oneLine_zh": "物理全学段专家团，覆盖K-12/本科/竞赛硕博，Step-by-Step教学协议+自适应出题+跨学科连接+2026前沿趋势（2026前沿技术升级）",
+      "initPrompt_zh": "你好，我是物理全能智囊团主理人理贯通，随时为你解答从小学到大学的所有物理问题！可以帮你讲解理论、设计实验、梳理物理学史，或者攻克难题。请问你想了解什么？",
+      "quickPrompts_zh": [
+        "你好，我是物理全能智囊团主理人理贯通，随时为你解答从小学到大学的所有物理问题！可以帮你讲解理论、设计实验、梳理物理学史，或者攻克难题。请问你想了解什么？",
+        "给我设计一个高中物理的光学干涉实验，要有详细的步骤和原理分析",
+        "梳理从亚里士多德到杨振宁的物理学发展脉络，列出每个时代的关键人物和突破"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "7.8MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "qihuang-medical",
+      "name": "qihuang-medical",
+      "displayName_zh": "岐黄医典",
+      "displayName_en": "QiHuang Medical Compendium",
+      "profession_zh": "岐黄医典",
+      "version": "4.1.0",
+      "author": "Lee Yanming",
+      "expertType": "team",
+      "leadAgent": "qihuang-medical-team-lead",
+      "agentCount": 8,
+      "agents": [
+        "bai-ansheng",
+        "chen-qihuang",
+        "dian-qiuzhen",
+        "ming-yi-tong",
+        "qihuang-medical-team-lead",
+        "wang-zhen-shi",
+        "wen-gezhi",
+        "xie-baicao"
+      ],
+      "teamSize": 8,
+      "members": [
+        {
+          "id": "qihuang-medical-team-lead",
+          "name_zh": "医道林",
+          "name_en": "Yidao Lin",
+          "profession_zh": "首席医学总监",
+          "role": "lead"
+        },
+        {
+          "id": "chen-qihuang",
+          "name_zh": "陈岐黄",
+          "name_en": "Chen Qihuang",
+          "profession_zh": "中医圣手",
+          "role": "member"
+        },
+        {
+          "id": "bai-ansheng",
+          "name_zh": "白安生",
+          "name_en": "Bai Ansheng",
+          "profession_zh": "西医主任医师",
+          "role": "member"
+        },
+        {
+          "id": "xie-baicao",
+          "name_zh": "谢百草",
+          "name_en": "Xie Baicao",
+          "profession_zh": "药学研究总监",
+          "role": "member"
+        },
+        {
+          "id": "wen-gezhi",
+          "name_zh": "文格致",
+          "name_en": "Wen Gezhi",
+          "profession_zh": "医学研究总监",
+          "role": "member"
+        },
+        {
+          "id": "dian-qiuzhen",
+          "name_zh": "典求真",
+          "name_en": "Dian Qiuzhen",
+          "profession_zh": "中医经典导师",
+          "role": "member"
+        },
+        {
+          "id": "wang-zhen-shi",
+          "name_zh": "望诊师",
+          "name_en": "Wang Zhen Shi",
+          "profession_zh": "望闻问切·望诊专家",
+          "role": "member"
+        },
+        {
+          "id": "ming-yi-tong",
+          "name_zh": "命医通",
+          "name_en": "Ming Yi Tong",
+          "profession_zh": "八字体质健康预见师",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "中西医融合",
+        "临床诊疗",
+        "医药研发"
+      ],
+      "oneLine_zh": "中西医深度融会贯通+中医经典研读+面诊舌诊+八字体质健康预见：MDAgents自适应协作、网络药理学、OpenTCM知识图谱、系统综述自动化。含黄帝内经/伤寒论/金匮要略/本草纲目等历代经典原文检索与注解对比（2026前沿技术升级）",
+      "initPrompt_zh": "我最近持续咳嗽伴有低烧，请帮我诊断并给出治疗方案。",
+      "quickPrompts_zh": [
+        "我最近持续咳嗽伴有低烧，请帮我诊断并给出治疗方案。",
+        "帮我查一下黄帝内经中关于五脏的原文并解释。",
+        "对比伤寒论太阳病篇各家的注解。"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "6.0MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "suan-jing-ge",
+      "name": "suan-jing-ge",
+      "displayName_zh": "算经阁",
+      "displayName_en": "Accounting Guild",
+      "profession_zh": "注册会计师团队",
+      "version": "2.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "accounting-team-lead",
+      "agentCount": 9,
+      "agents": [
+        "accounting-team-lead",
+        "biao-bao-shi",
+        "cheng-ben-lang",
+        "fen-xi-jia",
+        "he-bing-shi",
+        "nei-kong-shi",
+        "shen-ji-shi",
+        "shui-wu-guan",
+        "zhang-fang-lang"
+      ],
+      "teamSize": 9,
+      "members": [
+        {
+          "id": "accounting-team-lead",
+          "name_zh": "计筹师",
+          "name_en": "Ji Choushi",
+          "profession_zh": "会计总师",
+          "role": "lead"
+        },
+        {
+          "id": "zhang-fang-lang",
+          "name_zh": "账房郎",
+          "name_en": "Zhang Fanglang",
+          "profession_zh": "记账分录宗师",
+          "role": "member"
+        },
+        {
+          "id": "biao-bao-shi",
+          "name_zh": "报表使",
+          "name_en": "Biao Baoshi",
+          "profession_zh": "财务报表宗师",
+          "role": "member"
+        },
+        {
+          "id": "shui-wu-guan",
+          "name_zh": "税务官",
+          "name_en": "Shui Wuguan",
+          "profession_zh": "税务筹划宗师",
+          "role": "member"
+        },
+        {
+          "id": "shen-ji-shi",
+          "name_zh": "审计师",
+          "name_en": "Shen Jishi",
+          "profession_zh": "审计CPA宗师",
+          "role": "member"
+        },
+        {
+          "id": "fen-xi-jia",
+          "name_zh": "分析家",
+          "name_en": "Fen Xijia",
+          "profession_zh": "财务分析宗师",
+          "role": "member"
+        },
+        {
+          "id": "he-bing-shi",
+          "name_zh": "合并师",
+          "name_en": "He Bingshi",
+          "profession_zh": "合并报表宗师",
+          "role": "member"
+        },
+        {
+          "id": "cheng-ben-lang",
+          "name_zh": "成本郎",
+          "name_en": "Cheng Benlang",
+          "profession_zh": "成本核算宗师",
+          "role": "member"
+        },
+        {
+          "id": "nei-kong-shi",
+          "name_zh": "内控师",
+          "name_en": "Nei Kongshi",
+          "profession_zh": "内部控制宗师",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "财务会计",
+        "税务筹划",
+        "审计CPA",
+        "财务分析",
+        "合并报表",
+        "成本核算",
+        "内部控制"
+      ],
+      "oneLine_zh": "九位会计宗师联袂，覆盖财务会计、税务、审计、分析、合并、成本、内控全领域。初级至CPA级全覆盖，交叉验证质量门禁（2026前沿技术升级）",
+      "initPrompt_zh": "欢迎来到算经阁 🧮 我是主理人计筹师。请告诉我您的需求：记账分录、财务报表、税务计算、财务分析、审计服务、合并报表、成本核算或内控审计，我将调度最合适的专家为您服务。",
+      "quickPrompts_zh": [
+        "请告诉我您的会计需求：记账分录、财务报表、税务计算、财务分析、审计服务、合并报表、成本核算或内控审计。",
+        "帮我编制以下业务的会计分录...",
+        "根据试算平衡表编制财务报表...",
+        "计算年利润50万元的企业所得税...",
+        "对资产负债表进行财务比率分析...",
+        "编制应收账款审计底稿...",
+        "编制母子公司合并抵销分录...",
+        "用作业成本法计算产品成本...",
+        "评估销售循环内部控制有效性..."
+      ],
+      "embeddedSkills": [],
+      "references": [
+        "shared-knowledge-base.md"
+      ],
+      "hasSettings": true,
+      "sizeHuman": "160.7KB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "teacher-promotion-filling",
+      "name": "teacher-promotion-filling",
+      "displayName_zh": "青云梯",
+      "displayName_en": "Qingyun Ti — Teacher Promotion Expert Team",
+      "profession_zh": "青云梯",
+      "version": "1.1.0",
+      "author": "李老师",
+      "expertType": "team",
+      "leadAgent": "teacher-promotion-filling-team-lead",
+      "agentCount": 7,
+      "agents": [
+        "biao-guishi",
+        "cai-liao-yuan",
+        "dao-yin-yuan",
+        "jiao-yan-guan",
+        "mo-banshi",
+        "shu-caiguan",
+        "teacher-promotion-filling-team-lead"
+      ],
+      "teamSize": 7,
+      "members": [
+        {
+          "id": "teacher-promotion-filling-team-lead",
+          "name_zh": "顾全之",
+          "name_en": "顾全之",
+          "profession_zh": "职称评审总调度",
+          "role": "lead"
+        },
+        {
+          "id": "biao-guishi",
+          "name_zh": "范规正",
+          "name_en": "范规正",
+          "profession_zh": "填表规则专家",
+          "role": "member"
+        },
+        {
+          "id": "shu-caiguan",
+          "name_zh": "采信通",
+          "name_en": "采信通",
+          "profession_zh": "数据采集专家",
+          "role": "member"
+        },
+        {
+          "id": "mo-banshi",
+          "name_zh": "模百适",
+          "name_en": "模百适",
+          "profession_zh": "模板适配专家",
+          "role": "member"
+        },
+        {
+          "id": "jiao-yan-guan",
+          "name_zh": "严校核",
+          "name_en": "严校核",
+          "profession_zh": "质量校验专家",
+          "role": "member"
+        },
+        {
+          "id": "dao-yin-yuan",
+          "name_zh": "导程通",
+          "name_en": "导程通",
+          "profession_zh": "系统导引专家",
+          "role": "member"
+        },
+        {
+          "id": "cai-liao-yuan",
+          "name_zh": "材万备",
+          "name_en": "材万备",
+          "profession_zh": "材料编制专家",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "职称评审",
+        "自动填表",
+        "材料编制"
+      ],
+      "oneLine_zh": "6位专家组成教师职称晋级填表团队，覆盖数据采集、模板匹配、系统导引、材料编制、质量校验全流程（2026前沿技术升级）",
+      "initPrompt_zh": "我在山东，初中物理，评高级教师，帮我填评审表",
+      "quickPrompts_zh": [
+        "我在山东，初中物理，评高级教师，帮我填评审表",
+        "帮我生成材料清单，我是福建小学教师，评一级教师",
+        "山东省职称系统班主任年限怎么填？"
+      ],
+      "embeddedSkills": [
+        "teacher-promotion-filling"
+      ],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "8.8MB",
+      "categoryId": "09-OperationsHR",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "tianji-ge",
+      "name": "tianji-ge",
+      "displayName_zh": "天机阁",
+      "displayName_en": "Tianji Ge",
+      "profession_zh": "天机阁",
+      "version": "2.2.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "tianji-ge-team-lead",
+      "agentCount": 10,
+      "agents": [
+        "cheng-guan-yun",
+        "en-qing-shi",
+        "fu-tong-xuan",
+        "shi-ze-zhong",
+        "tianji-ge-team-lead",
+        "wen-de-ming",
+        "xiang-guan-ren",
+        "yang-xun-long",
+        "yu-ying-shi",
+        "zhou-yan-yi"
+      ],
+      "teamSize": 10,
+      "members": [
+        {
+          "id": "tianji-ge-team-lead",
+          "name_zh": "解玄机",
+          "name_en": "Xie Xuanji",
+          "profession_zh": "玄学总鉴",
+          "role": "lead"
+        },
+        {
+          "id": "cheng-guan-yun",
+          "name_zh": "程观运",
+          "name_en": "Cheng Guanyun",
+          "profession_zh": "八字紫微宗师",
+          "role": "member"
+        },
+        {
+          "id": "yang-xun-long",
+          "name_zh": "杨寻龙",
+          "name_en": "Yang Xunlong",
+          "profession_zh": "风水堪舆宗师",
+          "role": "member"
+        },
+        {
+          "id": "zhou-yan-yi",
+          "name_zh": "周演易",
+          "name_en": "Zhou Yanyi",
+          "profession_zh": "周易奇门宗师",
+          "role": "member"
+        },
+        {
+          "id": "wen-de-ming",
+          "name_zh": "文得名",
+          "name_en": "Wen Deming",
+          "profession_zh": "姓名学大宗师",
+          "role": "member"
+        },
+        {
+          "id": "shi-ze-zhong",
+          "name_zh": "时择中",
+          "name_en": "Shi Zezhong",
+          "profession_zh": "择日择吉宗师",
+          "role": "member"
+        },
+        {
+          "id": "xiang-guan-ren",
+          "name_zh": "相观人",
+          "name_en": "Xiang Guanren",
+          "profession_zh": "相术大宗师",
+          "role": "member"
+        },
+        {
+          "id": "fu-tong-xuan",
+          "name_zh": "符通玄",
+          "name_en": "Fu Tongxuan",
+          "profession_zh": "道法玄术宗师",
+          "role": "member"
+        },
+        {
+          "id": "en-qing-shi",
+          "name_zh": "恩庆师",
+          "name_en": "En Qing Shi",
+          "profession_zh": "父母缘法宗师",
+          "role": "member"
+        },
+        {
+          "id": "yu-ying-shi",
+          "name_zh": "育英师",
+          "name_en": "Yu Ying Shi",
+          "profession_zh": "子女传承宗师",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "八字命理",
+        "风水堪舆",
+        "周易占卜",
+        "父母子女"
+      ],
+      "oneLine_zh": "十部玄学宗师联合推演，深度交叉验证+稳定运行保障。三代家运全景分析，降级策略零拒绝（2026前沿技术升级）",
+      "initPrompt_zh": "欢迎来到天机阁V2.1。请告诉我您的出生年月日时（八字）、想测之事、或具体问题，我将调度十部宗师为您推演天机，涵盖命运、事业、财运、感情、健康、父母子女、家运传承。",
+      "quickPrompts_zh": [
+        "欢迎来到天机阁V2.1。请告诉我您的出生年月日时（八字）、想测之事、或具体问题，我将调度十部宗师为您全面推演。",
+        "我出生于1990年5月15日下午3点，请帮我排八字并看今年运势。",
+        "我想看父母缘分和父母健康情况。",
+        "我想看子女运势和教育方向。",
+        "请全面分析我家三代人的运势传承。"
+      ],
+      "embeddedSkills": [],
+      "references": [
+        "MEMORY.md",
+        "celebrity-cases.md",
+        "shared-knowledge-base.md"
+      ],
+      "hasSettings": true,
+      "sizeHuman": "13.5MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "video-crew",
+      "name": "video-crew",
+      "displayName_zh": "视频创作团",
+      "displayName_en": "VideoCrew",
+      "profession_zh": "视频创作团",
+      "version": "1.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "video-crew-team-lead",
+      "agentCount": 6,
+      "agents": [
+        "chuan-shijie",
+        "hua-qianxun",
+        "sheng-huiyin",
+        "video-crew-team-lead",
+        "wen-siyuan",
+        "zhen-liuchang"
+      ],
+      "teamSize": 6,
+      "members": [
+        {
+          "id": "video-crew-team-lead",
+          "name_zh": "陈剪影",
+          "name_en": "Chen Jianying",
+          "profession_zh": "视频导演",
+          "role": "lead"
+        },
+        {
+          "id": "wen-siyuan",
+          "name_zh": "文思源",
+          "name_en": "Wen Siyuan",
+          "profession_zh": "剧本编剧",
+          "role": "member"
+        },
+        {
+          "id": "hua-qianxun",
+          "name_zh": "画千寻",
+          "name_en": "Hua Qianxun",
+          "profession_zh": "视觉设计师",
+          "role": "member"
+        },
+        {
+          "id": "zhen-liuchang",
+          "name_zh": "帧流畅",
+          "name_en": "Zhen Liuchang",
+          "profession_zh": "视频合成师",
+          "role": "member"
+        },
+        {
+          "id": "sheng-huiyin",
+          "name_zh": "声绘音",
+          "name_en": "Sheng Huiyin",
+          "profession_zh": "音频工程师",
+          "role": "member"
+        },
+        {
+          "id": "chuan-shijie",
+          "name_zh": "传视界",
+          "name_en": "Chuan Shijie",
+          "profession_zh": "发布运营",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "视频剧本创作",
+        "AI视频生成",
+        "多平台发布"
+      ],
+      "oneLine_zh": "从剧本创作、分镜设计、视觉生成、视频剪辑、音频制作到多平台发布的全流程AI视频创作团队。（2026前沿技术升级）",
+      "initPrompt_zh": "帮我做一个关于[主题]的视频，时长约[60]秒，风格[科技感/教程/故事/产品展示]，发布到[平台]。",
+      "quickPrompts_zh": [
+        "帮我做一个关于[主题]的视频，时长约[60]秒，风格[科技感/教程/故事/产品展示]，发布到[平台]。",
+        "我有一个关于[主题]的原始剧本，帮我润色、生成视频画面并发布。",
+        "为[产品/服务]制作一个短视频，适合社交媒体发布。"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "8.1MB",
+      "categoryId": "06-ContentCreative",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "yan-shu-kaoyan",
+      "name": "yan-shu-kaoyan",
+      "displayName_zh": "研枢考研专家团",
+      "displayName_en": "Yanshu Kaoyan Guild",
+      "profession_zh": "研枢考研专家团",
+      "version": "3.0.0",
+      "author": "Li Yanming",
+      "expertType": "team",
+      "leadAgent": "yan-shu-kaoyan-team-lead",
+      "agentCount": 27,
+      "agents": [
+        "tong-kao-tong",
+        "yan-fa",
+        "yan-fu",
+        "yan-gong",
+        "yan-guan",
+        "yan-jiao",
+        "yan-jiaocha",
+        "yan-jing",
+        "yan-jun",
+        "yan-li",
+        "yan-lian",
+        "yan-ming-ti",
+        "yan-nong",
+        "yan-pei",
+        "yan-shi",
+        "yan-shu-kaoyan-team-lead",
+        "yan-shuxue",
+        "yan-wen",
+        "yan-yi",
+        "yan-ying",
+        "yan-yishu",
+        "yan-ze",
+        "yan-zhe",
+        "yan-zheng",
+        "yuan-xiao-tong",
+        "zai-xiao-xian",
+        "zai-zhi-xian"
+      ],
+      "teamSize": 27,
+      "members": [
+        {
+          "id": "yan-shu-kaoyan-team-lead",
+          "name_zh": "研枢",
+          "name_en": "YanShu",
+          "profession_zh": "研途总调度官",
+          "role": "lead"
+        },
+        {
+          "id": "yan-zheng",
+          "name_zh": "研政",
+          "name_en": "YanZheng",
+          "profession_zh": "考研政治首席讲师",
+          "role": "member"
+        },
+        {
+          "id": "yan-ying",
+          "name_zh": "研英",
+          "name_en": "YanYing",
+          "profession_zh": "考研英语首席讲师",
+          "role": "member"
+        },
+        {
+          "id": "yan-shuxue",
+          "name_zh": "研数",
+          "name_en": "YanShuxue",
+          "profession_zh": "考研数学首席讲师",
+          "role": "member"
+        },
+        {
+          "id": "yan-lian",
+          "name_zh": "研联",
+          "name_en": "YanLian",
+          "profession_zh": "管经联考首席讲师",
+          "role": "member"
+        },
+        {
+          "id": "tong-kao-tong",
+          "name_zh": "统考通",
+          "name_en": "TongKaoTong",
+          "profession_zh": "全国统考情报官",
+          "role": "member"
+        },
+        {
+          "id": "yuan-xiao-tong",
+          "name_zh": "院校通",
+          "name_en": "YuanXiaoTong",
+          "profession_zh": "自命题院校情报官",
+          "role": "member"
+        },
+        {
+          "id": "zai-xiao-xian",
+          "name_zh": "在校线",
+          "name_en": "ZaiXiaoXian",
+          "profession_zh": "全日制备考规划师",
+          "role": "member"
+        },
+        {
+          "id": "zai-zhi-xian",
+          "name_zh": "在职线",
+          "name_en": "ZaiZhiXian",
+          "profession_zh": "非全日制备考规划师",
+          "role": "member"
+        },
+        {
+          "id": "yan-ming-ti",
+          "name_zh": "研命题",
+          "name_en": "YanMingTi",
+          "profession_zh": "命题测评官",
+          "role": "member"
+        },
+        {
+          "id": "yan-pei",
+          "name_zh": "研陪",
+          "name_en": "YanPei",
+          "profession_zh": "全程陪跑教练",
+          "role": "member"
+        },
+        {
+          "id": "yan-ze",
+          "name_zh": "研择",
+          "name_en": "YanZe",
+          "profession_zh": "择校决策官",
+          "role": "member"
+        },
+        {
+          "id": "yan-fu",
+          "name_zh": "研复",
+          "name_en": "YanFu",
+          "profession_zh": "复试调剂官",
+          "role": "member"
+        },
+        {
+          "id": "yan-zhe",
+          "name_zh": "研哲",
+          "name_en": "YanZhe",
+          "profession_zh": "哲学学科首席专家",
+          "role": "member"
+        },
+        {
+          "id": "yan-jing",
+          "name_zh": "研经",
+          "name_en": "YanJing",
+          "profession_zh": "经济学学科首席专家",
+          "role": "member"
+        },
+        {
+          "id": "yan-fa",
+          "name_zh": "研法",
+          "name_en": "YanFa",
+          "profession_zh": "法学学科首席专家",
+          "role": "member"
+        },
+        {
+          "id": "yan-jiao",
+          "name_zh": "研教",
+          "name_en": "YanJiao",
+          "profession_zh": "教育学学科首席专家",
+          "role": "member"
+        },
+        {
+          "id": "yan-wen",
+          "name_zh": "研文",
+          "name_en": "YanWen",
+          "profession_zh": "文学学科首席专家",
+          "role": "member"
+        },
+        {
+          "id": "yan-shi",
+          "name_zh": "研史",
+          "name_en": "YanShi",
+          "profession_zh": "历史学学科首席专家",
+          "role": "member"
+        },
+        {
+          "id": "yan-li",
+          "name_zh": "研理",
+          "name_en": "YanLi",
+          "profession_zh": "理学学科首席专家",
+          "role": "member"
+        },
+        {
+          "id": "yan-gong",
+          "name_zh": "研工",
+          "name_en": "YanGong",
+          "profession_zh": "工学学科首席专家",
+          "role": "member"
+        },
+        {
+          "id": "yan-nong",
+          "name_zh": "研农",
+          "name_en": "YanNong",
+          "profession_zh": "农学学科首席专家",
+          "role": "member"
+        },
+        {
+          "id": "yan-yi",
+          "name_zh": "研医",
+          "name_en": "YanYi",
+          "profession_zh": "医学学科首席专家",
+          "role": "member"
+        },
+        {
+          "id": "yan-guan",
+          "name_zh": "研管",
+          "name_en": "YanGuan",
+          "profession_zh": "管理学学科首席专家",
+          "role": "member"
+        },
+        {
+          "id": "yan-yishu",
+          "name_zh": "研艺",
+          "name_en": "YanYiShu",
+          "profession_zh": "艺术学学科首席专家",
+          "role": "member"
+        },
+        {
+          "id": "yan-jun",
+          "name_zh": "研军",
+          "name_en": "YanJun",
+          "profession_zh": "军事学学科顾问",
+          "role": "member"
+        },
+        {
+          "id": "yan-jiaocha",
+          "name_zh": "研交",
+          "name_en": "YanJiaoCha",
+          "profession_zh": "交叉学科首席专家",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "考研",
+        "全程陪跑",
+        "真题模拟"
+      ],
+      "oneLine_zh": "27席考研专家团：14门类导师+全非全双轨+统考自命题+择校+复试调剂+陪跑+真题模拟",
+      "initPrompt_zh": "帮我制定一份考研全科备考规划",
+      "quickPrompts_zh": [
+        "帮我制定一份考研全科备考规划",
+        "帮我建立学情档案，开始全程陪跑",
+        "出一套408诊断卷并批改讲解"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": false,
+      "sizeHuman": "187.4KB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    },
+    {
+      "dir": "yimou-pavilion",
+      "name": "yimou-pavilion",
+      "displayName_zh": "弈谋阁",
+      "displayName_en": "Yimou Pavilion",
+      "profession_zh": "弈谋阁",
+      "version": "2.1.0",
+      "author": "李彦明",
+      "expertType": "team",
+      "leadAgent": "yimou-pavilion-team-lead",
+      "agentCount": 5,
+      "agents": [
+        "diplomatic-strategist",
+        "insight-master",
+        "situation-analyst",
+        "wisdom-archivist",
+        "yimou-pavilion-team-lead"
+      ],
+      "teamSize": 5,
+      "members": [
+        {
+          "id": "yimou-pavilion-team-lead",
+          "name_zh": "弈谋阁主",
+          "name_en": "Yimou",
+          "profession_zh": "首席谋略官",
+          "role": "lead"
+        },
+        {
+          "id": "insight-master",
+          "name_zh": "谭观心",
+          "name_en": "Tan Guanxin",
+          "profession_zh": "人际洞察师",
+          "role": "member"
+        },
+        {
+          "id": "diplomatic-strategist",
+          "name_zh": "许纵横",
+          "name_en": "Xu Zongheng",
+          "profession_zh": "谈判策略师",
+          "role": "member"
+        },
+        {
+          "id": "situation-analyst",
+          "name_zh": "沈观势",
+          "name_en": "Shen Guanshi",
+          "profession_zh": "局势研判师",
+          "role": "member"
+        },
+        {
+          "id": "wisdom-archivist",
+          "name_zh": "古藏锋",
+          "name_en": "Gu Cangfeng",
+          "profession_zh": "谋略典籍官",
+          "role": "member"
+        }
+      ],
+      "tags_zh": [
+        "战略谋断",
+        "人心洞察",
+        "博弈谈判"
+      ],
+      "oneLine_zh": "顶级谋略智囊团，融汇心理学、博弈论与历史智慧。五位谋士以阴阳辩证之法，为你识人心、判局势、定谋略（2026前沿技术升级）",
+      "initPrompt_zh": "弈谋阁已启。我是弈谋阁主，融汇阴阳谋略之术。这里五位谋士各执业界牛耳：谭观心洞察人心幽微，许纵横运筹合纵连横，沈观势预判风云变幻，古藏锋通晓古今成败。请道来你的困局——弈谋阁当为你谋定天下。",
+      "quickPrompts_zh": [
+        "弈谋阁已启。我是弈谋阁主，融汇阴阳谋略之术。这里五位谋士各执业界牛耳：谭观心洞察人心幽微，许纵横运筹合纵连横，沈观势预判风云变幻，古藏锋通晓古今成败。请道来你的困局——弈谋阁当为你谋定天下。",
+        "上司总是抢功，我该忍气吞声还是据理力争？请弈谋阁为我分析局势、设计应对谋略。",
+        "商业谈判中对方实力远强于我，我该如何以小博大？请弈谋阁从多维角度给出策略方案。"
+      ],
+      "embeddedSkills": [],
+      "references": [],
+      "hasSettings": true,
+      "sizeHuman": "7.6MB",
+      "categoryId": "12-IndustryConsultant",
+      "hasPluginJson": true
+    }
+  ]
+}

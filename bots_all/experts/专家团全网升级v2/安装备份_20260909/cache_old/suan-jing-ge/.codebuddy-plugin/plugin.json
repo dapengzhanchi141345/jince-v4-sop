@@ -1,0 +1,130 @@
+{
+  "name": "suan-jing-ge",
+  "version": "2.0.0",
+  "description": "Accounting Guild - A comprehensive 9-member professional accounting expert team covering financial accounting, management accounting, tax planning, audit, financial analysis, consolidation, cost accounting, and internal control. From junior to CPA level with cross-validation quality gates.",
+  "author": {
+    "name": "李彦明",
+    "email": ""
+  },
+  "agents": [
+    "./agents/accounting-team-lead.md",
+    "./agents/zhang-fang-lang.md",
+    "./agents/biao-bao-shi.md",
+    "./agents/shui-wu-guan.md",
+    "./agents/shen-ji-shi.md",
+    "./agents/fen-xi-jia.md",
+    "./agents/he-bing-shi.md",
+    "./agents/cheng-ben-lang.md",
+    "./agents/nei-kong-shi.md"
+  ],
+  "expertType": "team",
+  "agentName": "accounting-team-lead",
+  "teamInfo": {
+    "leadAgent": "accounting-team-lead",
+    "memberAgents": ["zhang-fang-lang", "biao-bao-shi", "shui-wu-guan", "shen-ji-shi", "fen-xi-jia", "he-bing-shi", "cheng-ben-lang", "nei-kong-shi"]
+  },
+  "displayName": {
+    "en": "Accounting Guild",
+    "zh": "算经阁"
+  },
+  "profession": {
+    "en": "Professional Accounting Expert Team",
+    "zh": "注册会计师团队"
+  },
+  "displayDescription": {
+    "en": "9 masters of accounting covering financial accounting, tax, audit, analysis, consolidation, cost and internal control. Full coverage from junior to CPA level with cross-validation quality gates.",
+    "zh": "九位会计宗师联袂，覆盖财务会计、税务、审计、分析、合并、成本、内控全领域。初级至CPA级全覆盖，交叉验证质量门禁。"
+  },
+  "avatar": "avatars/accounting-team-lead.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "欢迎来到算经阁 🧮 我是主理人计筹师。请告诉我您的需求：记账分录、财务报表、税务计算、财务分析、审计服务、合并报表、成本核算或内控审计，我将调度最合适的专家为您服务。",
+    "en": "Welcome to Accounting Guild. I am Ji Choushi, the chief coordinator. Please tell me your needs: journal entries, financial statements, tax calculation, financial analysis, audit service, consolidation, cost accounting or internal control."
+  },
+  "plugin": "suan-jing-ge",
+  "tags": [
+    { "en": "Financial Accounting", "zh": "财务会计" },
+    { "en": "Tax Planning", "zh": "税务筹划" },
+    { "en": "Audit & CPA", "zh": "审计CPA" },
+    { "en": "Financial Analysis", "zh": "财务分析" },
+    { "en": "Consolidation", "zh": "合并报表" },
+    { "en": "Cost Accounting", "zh": "成本核算" },
+    { "en": "Internal Control", "zh": "内部控制" }
+  ],
+  "quickPrompts": [
+    { "en": "Please tell me your accounting needs: journal entries, financial statements, tax calculation, financial analysis, audit service, consolidation, cost accounting or internal control.", "zh": "请告诉我您的会计需求：记账分录、财务报表、税务计算、财务分析、审计服务、合并报表、成本核算或内控审计。" },
+    { "en": "Help me prepare journal entries for the following transactions...", "zh": "帮我编制以下业务的会计分录..." },
+    { "en": "Prepare financial statements based on the trial balance...", "zh": "根据试算平衡表编制财务报表..." },
+    { "en": "Calculate corporate income tax for a company with profit of 500,000 yuan...", "zh": "计算年利润50万元的企业所得税..." },
+    { "en": "Perform financial ratio analysis on the balance sheet...", "zh": "对资产负债表进行财务比率分析..." },
+    { "en": "Prepare audit working papers for accounts receivable...", "zh": "编制应收账款审计底稿..." },
+    { "en": "Prepare consolidation adjustments for parent-subsidiary...", "zh": "编制母子公司合并抵销分录..." },
+    { "en": "Calculate product cost using activity-based costing...", "zh": "用作业成本法计算产品成本..." },
+    { "en": "Assess internal control effectiveness for sales cycle...", "zh": "评估销售循环内部控制有效性..." }
+  ],
+  "members": [
+    {
+      "id": "accounting-team-lead",
+      "displayName": { "en": "Ji Choushi", "zh": "计筹师" },
+      "profession": { "en": "Chief Accounting Strategist", "zh": "会计总师" },
+      "avatar": "avatars/accounting-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "zhang-fang-lang",
+      "displayName": { "en": "Zhang Fanglang", "zh": "账房郎" },
+      "profession": { "en": "Bookkeeping & Journal Master", "zh": "记账分录宗师" },
+      "avatar": "avatars/zhang-fang-lang.png",
+      "role": "member"
+    },
+    {
+      "id": "biao-bao-shi",
+      "displayName": { "en": "Biao Baoshi", "zh": "报表使" },
+      "profession": { "en": "Financial Statements Master", "zh": "财务报表宗师" },
+      "avatar": "avatars/biao-bao-shi.png",
+      "role": "member"
+    },
+    {
+      "id": "shui-wu-guan",
+      "displayName": { "en": "Shui Wuguan", "zh": "税务官" },
+      "profession": { "en": "Tax Planning Master", "zh": "税务筹划宗师" },
+      "avatar": "avatars/shui-wu-guan.png",
+      "role": "member"
+    },
+    {
+      "id": "shen-ji-shi",
+      "displayName": { "en": "Shen Jishi", "zh": "审计师" },
+      "profession": { "en": "Audit & CPA Master", "zh": "审计CPA宗师" },
+      "avatar": "avatars/shen-ji-shi.png",
+      "role": "member"
+    },
+    {
+      "id": "fen-xi-jia",
+      "displayName": { "en": "Fen Xijia", "zh": "分析家" },
+      "profession": { "en": "Financial Analysis Master", "zh": "财务分析宗师" },
+      "avatar": "avatars/fen-xi-jia.png",
+      "role": "member"
+    },
+    {
+      "id": "he-bing-shi",
+      "displayName": { "en": "He Bingshi", "zh": "合并师" },
+      "profession": { "en": "Consolidation Master", "zh": "合并报表宗师" },
+      "avatar": "avatars/he-bing-shi.png",
+      "role": "member"
+    },
+    {
+      "id": "cheng-ben-lang",
+      "displayName": { "en": "Cheng Benlang", "zh": "成本郎" },
+      "profession": { "en": "Cost Accounting Master", "zh": "成本核算宗师" },
+      "avatar": "avatars/cheng-ben-lang.png",
+      "role": "member"
+    },
+    {
+      "id": "nei-kong-shi",
+      "displayName": { "en": "Nei Kongshi", "zh": "内控师" },
+      "profession": { "en": "Internal Control Master", "zh": "内部控制宗师" },
+      "avatar": "avatars/nei-kong-shi.png",
+      "role": "member"
+    }
+  ]
+}

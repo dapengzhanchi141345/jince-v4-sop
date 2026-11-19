@@ -1,0 +1,131 @@
+{
+  "name": "goldstrategy-guild",
+  "version": "4.0.0",
+  "description": "[SELF-EVOLVING] Institutional-grade quantitative trading firm v4.0 with self-evolution engine (Walk-Forward Optimization, WFER degradation detection, strategy parameter pool), 9 multi-agent roles across 5 departments, 12-layer risk management, and human-trader simulation for XAUUSD.",
+  "author": {
+    "name": "李彦明",
+    "email": ""
+  },
+  "agents": [
+    "./agents/goldstrategy-guild-team-lead.md",
+    "./agents/market-hunter.md",
+    "./agents/quant-oracle.md",
+    "./agents/guardian-executor.md",
+    "./agents/research-strategist.md",
+    "./agents/quant-architect.md",
+    "./agents/risk-auditor.md",
+    "./agents/operations-officer.md",
+    "./agents/macro-analyst.md"
+  ],
+
+  "expertType": "team",
+  "agentName": "goldstrategy-guild-team-lead",
+  "teamInfo": {
+    "leadAgent": "goldstrategy-guild-team-lead",
+    "memberAgents": [
+      "market-hunter",
+      "quant-oracle",
+      "guardian-executor",
+      "research-strategist",
+      "quant-architect",
+      "risk-auditor",
+      "operations-officer",
+      "macro-analyst"
+    ]
+  },
+
+  "displayName": {
+    "en": "Goldstrategy Guild",
+    "zh": "金策宗师团"
+  },
+  "profession": {
+    "en": "Goldstrategy Guild",
+    "zh": "金策宗师团"
+  },
+  "displayDescription": {
+    "en": "An institutional-grade quantitative trading firm with 9 specialized roles across Research, Trading, Risk, Technology, and Operations — powered by multi-strategy fusion, self-evolving AI, and 12-layer risk management for XAUUSD.",
+    "zh": "机构级自进化量化交易系统 v4.0，9大角色5部门全链路覆盖，Walk-Forward自进化引擎驱动参数持续优化，12层风控+操盘手心理模拟，专注黄金智能交易。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "策金尊在此，金策宗师团全体就位。五大部门九大角色听候调遣，请下达交易任务。",
+    "en": "Goldstrategy Guild fully assembled. 9 specialized roles across 5 departments ready. Awaiting trading mission."
+  },
+  "plugin": "goldstrategy-guild",
+  "tags": [
+    { "en": "Institutional Trading", "zh": "机构级量化" },
+    { "en": "Multi-Strategy Fusion", "zh": "多策略融合" },
+    { "en": "Self-Evolving AI", "zh": "自进化AI" }
+  ],
+  "quickPrompts": [
+    { "en": "Goldstrategy Guild fully assembled. 9 specialized roles across 5 departments ready. Awaiting trading mission.", "zh": "策金尊在此，金策宗师团全体就位。五大部门九大角色听候调遣，请下达交易任务。" },
+    { "en": "Run a full trading cycle: research → signal → risk check → execute → settle.", "zh": "运行完整交易周期：研究→信号→风控→执行→结算。" },
+    { "en": "Produce a weekly P&L report with performance attribution and risk analysis.", "zh": "生成周度P&L报表，含业绩归因和风险分析。" }
+  ],
+  "members": [
+    {
+      "id": "goldstrategy-guild-team-lead",
+      "displayName": { "en": "Goldstrategy Master", "zh": "策金尊" },
+      "profession": { "en": "Chief Investment Officer (CIO)", "zh": "首席投资官" },
+      "avatar": "avatars/goldstrategy-guild-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "market-hunter",
+      "displayName": { "en": "Market Tracker", "zh": "猎场司" },
+      "profession": { "en": "Technical Analysis Desk", "zh": "技术分析专员" },
+      "avatar": "avatars/market-hunter.png",
+      "role": "member"
+    },
+    {
+      "id": "research-strategist",
+      "displayName": { "en": "Research Strategist", "zh": "研策师" },
+      "profession": { "en": "Quantitative Research (Alpha Discovery)", "zh": "量化研究员" },
+      "avatar": "avatars/research-strategist.png",
+      "role": "member"
+    },
+    {
+      "id": "macro-analyst",
+      "displayName": { "en": "Macro Observer", "zh": "观潮人" },
+      "profession": { "en": "Macro & Sentiment Research", "zh": "宏观策略分析师" },
+      "avatar": "avatars/macro-analyst.png",
+      "role": "member"
+    },
+    {
+      "id": "quant-oracle",
+      "displayName": { "en": "Quant Oracle", "zh": "算天机" },
+      "profession": { "en": "Portfolio & Risk Analytics", "zh": "投资组合与风险分析" },
+      "avatar": "avatars/quant-oracle.png",
+      "role": "member"
+    },
+    {
+      "id": "guardian-executor",
+      "displayName": { "en": "Guardian Executor", "zh": "金刚卫" },
+      "profession": { "en": "Execution Desk (Trader)", "zh": "交易执行员" },
+      "avatar": "avatars/guardian-executor.png",
+      "role": "member"
+    },
+    {
+      "id": "risk-auditor",
+      "displayName": { "en": "Risk Auditor", "zh": "审度司" },
+      "profession": { "en": "Independent Risk Management (Middle Office)", "zh": "独立风险官" },
+      "avatar": "avatars/risk-auditor.png",
+      "role": "member"
+    },
+    {
+      "id": "quant-architect",
+      "displayName": { "en": "Quant Architect", "zh": "筑码师" },
+      "profession": { "en": "Quantitative Development & Infrastructure", "zh": "量化开发与架构师" },
+      "avatar": "avatars/quant-architect.png",
+      "role": "member"
+    },
+    {
+      "id": "operations-officer",
+      "displayName": { "en": "Operations Officer", "zh": "度支司" },
+      "profession": { "en": "Operations & Compliance (Back Office)", "zh": "运营与合规官" },
+      "avatar": "avatars/operations-officer.png",
+      "role": "member"
+    }
+  ]
+}

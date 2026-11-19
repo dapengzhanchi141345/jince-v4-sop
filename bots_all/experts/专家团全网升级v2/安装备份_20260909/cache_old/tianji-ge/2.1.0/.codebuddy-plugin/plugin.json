@@ -1,0 +1,133 @@
+{
+  "name": "tianji-ge",
+  "version": "2.1.0",
+  "description": "Tianji Ge - A comprehensive Chinese metaphysics expert team covering Bazi, Zi Wei Dou Shu, Feng Shui, I Ching divination, Qi Men Dun Jia, naming science, date selection, physiognomy, Taoist esoteric arts, parents karma and children destiny analysis.",
+  "author": {
+    "name": "李彦明",
+    "email": ""
+  },
+  "agents": [
+    "./agents/tianji-ge-team-lead.md",
+    "./agents/cheng-guan-yun.md",
+    "./agents/yang-xun-long.md",
+    "./agents/zhou-yan-yi.md",
+    "./agents/wen-de-ming.md",
+    "./agents/shi-ze-zhong.md",
+    "./agents/xiang-guan-ren.md",
+    "./agents/fu-tong-xuan.md",
+    "./agents/en-qing-shi.md",
+    "./agents/yu-ying-shi.md"
+  ],
+
+  "expertType": "team",
+  "agentName": "tianji-ge-team-lead",
+  "teamInfo": {
+    "leadAgent": "tianji-ge-team-lead",
+    "memberAgents": ["cheng-guan-yun", "yang-xun-long", "zhou-yan-yi", "wen-de-ming", "shi-ze-zhong", "xiang-guan-ren", "fu-tong-xuan", "en-qing-shi", "yu-ying-shi"]
+  },
+
+  "displayName": {
+    "en": "Tianji Ge",
+    "zh": "天机阁"
+  },
+  "profession": {
+    "en": "Tianji Ge",
+    "zh": "天机阁"
+  },
+  "displayDescription": {
+    "en": "Ten masters of Chinese metaphysics with deep cross-validation & stable operation protocol. Full family karma chain across 3 generations with deterministic fallback strategies.",
+    "zh": "十部玄学宗师联合推演，深度交叉验证+稳定运行保障。三代家运全景分析，降级策略零拒绝。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "欢迎来到天机阁V2.1。请告诉我您的出生年月日时（八字）、想测之事、或具体问题，我将调度十部宗师为您推演天机，涵盖命运、事业、财运、感情、健康、父母子女、家运传承。",
+    "en": "Welcome to Tianji Ge V2.1. Please provide your birth date and time (Ba Zi), the matter you wish to divine, or your specific question. I will dispatch our ten masters for comprehensive analysis covering destiny, career, wealth, relationships, health, parents, children and family lineage."
+  },
+  "plugin": "tianji-ge",
+  "tags": [
+    { "en": "Chinese Astrology", "zh": "八字命理" },
+    { "en": "Feng Shui Geomancy", "zh": "风水堪舆" },
+    { "en": "I Ching Divination", "zh": "周易占卜" },
+    { "en": "Family Karma", "zh": "父母子女" }
+  ],
+  "quickPrompts": [
+    { "en": "Welcome to Tianji Ge V2.1. Please provide your birth date and time (Ba Zi), the matter you wish to divine, or your specific question. I will dispatch our ten masters for comprehensive analysis.", "zh": "欢迎来到天机阁V2.1。请告诉我您的出生年月日时（八字）、想测之事、或具体问题，我将调度十部宗师为您全面推演。" },
+    { "en": "I was born on [YYYY-MM-DD HH:mm]. Please analyze my Bazi fortune for the year 2026.", "zh": "我出生于1990年5月15日下午3点，请帮我排八字并看今年运势。" },
+    { "en": "I want to know about my parents' health and our karma connection.", "zh": "我想看父母缘分和父母健康情况。" },
+    { "en": "I want to know about my children's future and education direction.", "zh": "我想看子女运势和教育方向。" },
+    { "en": "Analyze my entire family karma across 3 generations.", "zh": "请全面分析我家三代人的运势传承。" }
+  ],
+  "members": [
+    {
+      "id": "tianji-ge-team-lead",
+      "displayName": { "en": "Xie Xuanji", "zh": "解玄机" },
+      "profession": { "en": "Chief Metaphysical Oracle", "zh": "玄学总鉴" },
+      "avatar": "avatars/tianji-ge-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "cheng-guan-yun",
+      "displayName": { "en": "Cheng Guanyun", "zh": "程观运" },
+      "profession": { "en": "Grandmaster of Bazi & Zi Wei", "zh": "八字紫微宗师" },
+      "avatar": "avatars/cheng-guan-yun.png",
+      "role": "member"
+    },
+    {
+      "id": "yang-xun-long",
+      "displayName": { "en": "Yang Xunlong", "zh": "杨寻龙" },
+      "profession": { "en": "Grandmaster of Feng Shui & Geomancy", "zh": "风水堪舆宗师" },
+      "avatar": "avatars/yang-xun-long.png",
+      "role": "member"
+    },
+    {
+      "id": "zhou-yan-yi",
+      "displayName": { "en": "Zhou Yanyi", "zh": "周演易" },
+      "profession": { "en": "Grandmaster of I Ching & Qi Men", "zh": "周易奇门宗师" },
+      "avatar": "avatars/zhou-yan-yi.png",
+      "role": "member"
+    },
+    {
+      "id": "wen-de-ming",
+      "displayName": { "en": "Wen Deming", "zh": "文得名" },
+      "profession": { "en": "Grandmaster of Nomenclature", "zh": "姓名学大宗师" },
+      "avatar": "avatars/wen-de-ming.png",
+      "role": "member"
+    },
+    {
+      "id": "shi-ze-zhong",
+      "displayName": { "en": "Shi Zezhong", "zh": "时择中" },
+      "profession": { "en": "Grandmaster of Auspicious Timing", "zh": "择日择吉宗师" },
+      "avatar": "avatars/shi-ze-zhong.png",
+      "role": "member"
+    },
+    {
+      "id": "xiang-guan-ren",
+      "displayName": { "en": "Xiang Guanren", "zh": "相观人" },
+      "profession": { "en": "Grandmaster of Physiognomy", "zh": "相术大宗师" },
+      "avatar": "avatars/xiang-guan-ren.png",
+      "role": "member"
+    },
+    {
+      "id": "fu-tong-xuan",
+      "displayName": { "en": "Fu Tongxuan", "zh": "符通玄" },
+      "profession": { "en": "Grandmaster of Taoist Esoterica", "zh": "道法玄术宗师" },
+      "avatar": "avatars/fu-tong-xuan.png",
+      "role": "member"
+    },
+    {
+      "id": "en-qing-shi",
+      "displayName": { "en": "En Qing Shi", "zh": "恩庆师" },
+      "profession": { "en": "Grandmaster of Parental Karma", "zh": "父母缘法宗师" },
+      "avatar": "",
+      "role": "member"
+    },
+    {
+      "id": "yu-ying-shi",
+      "displayName": { "en": "Yu Ying Shi", "zh": "育英师" },
+      "profession": { "en": "Grandmaster of Progeny & Children", "zh": "子女传承宗师" },
+      "avatar": "",
+      "role": "member"
+    }
+  ]
+}

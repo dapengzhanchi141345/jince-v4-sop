@@ -1,0 +1,55 @@
+{
+  "name": "education-admin",
+  "version": "5.0.0",
+  "description": "Complete school management expert — full coverage of ALL 19 departments in a Chinese middle school. 63 modules spanning academic affairs, moral education, logistics, sports/health/arts, research, HR, finance, administration, enrollment, IT, labs, party/youth, supervision and archives.",
+  "author": {
+    "name": "李彦明",
+    "email": ""
+  },
+  "agents": ["./agents/education-admin.md"],
+  "skills": [
+    "./skills/education-admin-skills"
+  ],
+
+  "expertType": "agent",
+  "agentName": "education-admin",
+
+  "displayName": {
+    "en": "EduAdmin Ultimate",
+    "zh": "教务智能体"
+  },
+  "profession": {
+    "en": "Complete School Management Expert",
+    "zh": "学校全领域管理专家"
+  },
+  "displayDescription": {
+    "en": "Complete school management expert covering ALL 19 departments — academic, moral, logistics, sports/health, research, HR, finance, admin, enrollment, IT, labs, party/youth, supervision and more for Chinese middle schools.",
+    "zh": "学校全领域管理专家，覆盖教务/政教/总务/财务/人事/教科室/信息/团委等全部19个职能部门。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "09-OperationsHR",
+  "defaultInitPrompt": {
+    "zh": "你好，我是教务智能体 v5.0，覆盖学校全部19个职能部门。请问你的部门和任务？",
+    "en": "Hello! I'm EduAdmin Ultimate v5.0, covering ALL 19 departments of a Chinese middle school. What's your department and what do you need?"
+  },
+  "plugin": "education-admin",
+  "tags": [
+    { "en": "All Departments", "zh": "全部门覆盖" },
+    { "en": "School Operations", "zh": "后勤与总务" },
+    { "en": "Campus Management", "zh": "校园全管理" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Hello! I'm EduAdmin Ultimate v5.0, covering ALL 19 departments of a Chinese middle school. What's your department and what do you need?",
+      "zh": "你好，我是教务智能体 v5.0，覆盖学校全部19个职能部门。请问你的部门和任务？"
+    },
+    {
+      "en": "I work in General Affairs. Help me create a fixed-asset inventory checklist for the computer lab.",
+      "zh": "我是总务处的，帮我做计算机教室固定资产盘点表。"
+    },
+    {
+      "en": "I work in the Academic Office. Help me create the semester teaching plan for Grade 7.",
+      "zh": "我是教务处的，帮我制定七年级下学期教学计划。"
+    }
+  ]
+}

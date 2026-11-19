@@ -1,0 +1,82 @@
+{
+  "name": "goldstrategy-guild",
+  "version": "1.0.0",
+  "description": "MT5 quantitative trading expert team integrating Supply & Demand, SMC order blocks, Kelly criterion, and Bayesian risk management for XAUUSD automated trading.",
+  "author": {
+    "name": "李彦明",
+    "email": ""
+  },
+  "agents": [
+    "./agents/goldstrategy-guild-team-lead.md",
+    "./agents/market-hunter.md",
+    "./agents/quant-oracle.md",
+    "./agents/guardian-executor.md"
+  ],
+
+  "expertType": "team",
+  "agentName": "goldstrategy-guild-team-lead",
+  "teamInfo": {
+    "leadAgent": "goldstrategy-guild-team-lead",
+    "memberAgents": ["market-hunter", "quant-oracle", "guardian-executor"]
+  },
+
+  "displayName": {
+    "en": "Goldstrategy Guild",
+    "zh": "金策宗师团"
+  },
+  "profession": {
+    "en": "Goldstrategy Guild",
+    "zh": "金策宗师团"
+  },
+  "displayDescription": {
+    "en": "An elite quantitative trading team that fuses Sam Seiden's Supply & Demand theory with SMC order block analysis, powered by Kelly Criterion position sizing and Bayesian risk management for XAUUSD automated trading.",
+    "zh": "融合供需理论与SMC订单块的量化交易团队，运用Kelly公式与贝叶斯风控，专注黄金智能交易。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "策金尊在此，金策宗师团听候调遣。要我现在扫描XAUUSD市场，分析供需区机会？",
+    "en": "Goldstrategy Guild at your service. Shall I scan the XAUUSD market for supply and demand zone opportunities?"
+  },
+  "plugin": "goldstrategy-guild",
+  "tags": [
+    { "en": "MT5 Trading Bot", "zh": "MT5量化交易" },
+    { "en": "Supply & Demand", "zh": "供需理论" },
+    { "en": "Risk Management", "zh": "风控管理" }
+  ],
+  "quickPrompts": [
+    { "en": "Goldstrategy Guild at your service. Shall I scan the XAUUSD market for supply and demand zone opportunities?", "zh": "策金尊在此，金策宗师团听候调遣。要我现在扫描XAUUSD市场，分析供需区机会？" },
+    { "en": "Analyze current gold price action and identify high-probability entry zones.", "zh": "分析当前黄金价格行为，找出高胜率入场区域。" },
+    { "en": "Check my running positions and report risk status.", "zh": "检查我的当前持仓，汇报风险状态。" }
+  ],
+  "members": [
+    {
+      "id": "goldstrategy-guild-team-lead",
+      "displayName": { "en": "Goldstrategy Master", "zh": "策金尊" },
+      "profession": { "en": "Chief Market Strategist", "zh": "首席策略军师" },
+      "avatar": "avatars/goldstrategy-guild-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "market-hunter",
+      "displayName": { "en": "Market Tracker", "zh": "猎场司" },
+      "profession": { "en": "Market Analysis Specialist", "zh": "市场分析专师" },
+      "avatar": "avatars/market-hunter.png",
+      "role": "member"
+    },
+    {
+      "id": "quant-oracle",
+      "displayName": { "en": "Quant Oracle", "zh": "算天机" },
+      "profession": { "en": "Quantitative Risk Analyst", "zh": "量化风控策师" },
+      "avatar": "avatars/quant-oracle.png",
+      "role": "member"
+    },
+    {
+      "id": "guardian-executor",
+      "displayName": { "en": "Guardian Executor", "zh": "金刚卫" },
+      "profession": { "en": "Trade Execution Commander", "zh": "交易执行统领" },
+      "avatar": "avatars/guardian-executor.png",
+      "role": "member"
+    }
+  ]
+}

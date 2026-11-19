@@ -1,0 +1,15 @@
+{
+  "result": "TIMEOUT",
+  "snapshot": {
+    "checked_at": "2026-11-14T17:51:23",
+    "gateway_state": null,
+    "state_pid": null,
+    "active_agents": null,
+    "platforms": null,
+    "host_pid": null,
+    "host_port": null,
+    "host_profiles": null,
+    "host_updated_at": null
+  },
+  "elapsed_s": 210.2
+}

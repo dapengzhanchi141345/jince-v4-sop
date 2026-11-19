@@ -1,0 +1,35 @@
+{
+  "before": {
+    "instance_id": "d76254547d364d748ab19bdc6cc79ef7",
+    "state": "ready"
+  },
+  "desklog_size_before": 9219103,
+  "desktop_before": [],
+  "helper_before": [],
+  "kill_results": {},
+  "desktop_remaining": [],
+  "singleton_locks_removed": [],
+  "desktop_exe": "E:\\hb\\hermes-agent\\apps\\desktop\\release\\win-unpacked\\Hermes.exe",
+  "desktop_new_pid": 2120,
+  "desktop_after": [
+    {
+      "pid": 2120,
+      "ppid": 34904,
+      "born": "19:42:01"
+    }
+  ],
+  "desklog_size_after": 9219103,
+  "desklog_grew": 0,
+  "desklog_new_lines": 0,
+  "new_401_count": 0,
+  "new_gtbf_count": 0,
+  "desklog_tail": [],
+  "gateway_after": {
+    "instance_id": "d76254547d364d748ab19bdc6cc79ef7",
+    "state": "ready",
+    "alive": true
+  },
+  "gateway_unchanged": true,
+  "result": "DESKTOP_COLD_STARTED",
+  "at": "2026-11-14T19:42:43"
+}

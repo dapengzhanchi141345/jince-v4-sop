@@ -1,0 +1,105 @@
+{
+  "before": {
+    "gateway_pid": 31736,
+    "instance_id": "d76254547d364d748ab19bdc6cc79ef7",
+    "state": "ready",
+    "alive": true
+  },
+  "desklog_start_line": 58018,
+  "desktop_pids_before": [
+    1048,
+    12388,
+    19156,
+    38596,
+    40440
+  ],
+  "helper_pids_before": [
+    9512,
+    9980,
+    10340,
+    13932,
+    14092,
+    17916,
+    18564,
+    18712,
+    21988,
+    22660,
+    23240,
+    23348,
+    27288,
+    27388,
+    27772,
+    27836,
+    28384,
+    28624,
+    28864,
+    29944,
+    31236,
+    32776,
+    33708,
+    33992,
+    35352,
+    38128,
+    38524,
+    40032,
+    40828,
+    43732,
+    44124
+  ],
+  "helpers_killed": 31,
+  "desktop_pids_after_kill": [
+    1048,
+    12388,
+    19156,
+    38596,
+    40440
+  ],
+  "desktop_exe": "E:\\hb\\hermes-agent\\apps\\desktop\\release\\win-unpacked\\Hermes.exe",
+  "desktop_new_pid": 28372,
+  "after_20s": {
+    "gateway_alive": true,
+    "instance_id": "d76254547d364d748ab19bdc6cc79ef7",
+    "state": "ready",
+    "desktop_pids": [
+      1048,
+      12388,
+      19156,
+      28372,
+      38596,
+      40440
+    ]
+  },
+  "gateway_unchanged": true,
+  "desklog_new_lines": 0,
+  "new_401_count": 0,
+  "new_gtbf_count": 0,
+  "desklog_tail": [],
+  "http_probe": {
+    "/api/health": {
+      "status": 200,
+      "body": "{\"ok\":true,\"version\":\"0.23.1\",\"displayVersion\":\"0.23.1\",\"commit\":\"3b421578588243f920886e6fe79a6faa87ea026e\",\"auth_required\":false}"
+    },
+    "/api/status": {
+      "status": 200,
+      "body": "{\"version\":\"0.23.1\",\"release_date\":\"2026.9.24\",\"config_version\":53,\"latest_config_version\":53,\"can_update_hermes\":true,\"gateway_running\":true,\"gateway_state\":\"running\",\"gateway_pla"
+    },
+    "/api/profiles": {
+      "status": 200,
+      "body": "{\"profiles\":[{\"name\":\"default\",\"path\":\"E:\\\\workbuddy\\\\国外模型\\\\hermes\",\"is_default\":true,\"model\":\"agnes-3.0-flash\",\"provider\":\"agnes-cn-pool\",\"has_env\":true,\"skill_count\":130,"
+    }
+  },
+  "final": {
+    "gateway_alive": true,
+    "instance_id": "d76254547d364d748ab19bdc6cc79ef7",
+    "desktop_pids": [
+      1048,
+      12388,
+      19156,
+      28372,
+      38596,
+      40440
+    ]
+  },
+  "result": "DESKTOP_REDIALED",
+  "at": "2026-11-14T19:39:41"
+}

@@ -1,0 +1,27 @@
+{
+  "guildName": "算经阁",
+  "version": "2.0.0",
+  "description": "九位会计宗师联袂，覆盖财务会计、税务、审计、分析、合并、成本、内控全领域",
+  "members": 9,
+  "level": "初级→中级→高级→CPA",
+  "qualityGates": 15,
+  "workflowModes": ["A", "B", "C", "D"],
+  "defaultLanguage": "zh",
+  "standard": "CAS",
+  "taxSystem": "China",
+  "auditStandard": "CAS",
+  "framework": ["COSO", "CAS", "IFRS"],
+  "capabilities": [
+    "记账分录",
+    "财务报表",
+    "税务计算",
+    "财务分析",
+    "审计底稿",
+    "合并报表",
+    "成本核算",
+    "内部控制"
+  ],
+  "tools": {
+    "local": "E:\\accounting_pro\\index.html"
+  }
+}

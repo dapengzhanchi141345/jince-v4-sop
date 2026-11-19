@@ -1,0 +1,518 @@
+{
+  "version": 2,
+  "plugins": {
+    "find-skills@codebuddy-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\codebuddy-plugins-official\\find-skills\\1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-08-08T23:40:39.641Z",
+        "lastUpdated": "2026-08-31T12:57:00.923Z"
+      }
+    ],
+    "playwright-cli@codebuddy-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\codebuddy-plugins-official\\playwright-cli\\0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2026-08-08T23:40:39.904Z",
+        "lastUpdated": "2026-09-01T13:23:12.368Z"
+      }
+    ],
+    "agent-browser@codebuddy-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\codebuddy-plugins-official\\agent-browser\\1.3.0",
+        "version": "1.3.0",
+        "installedAt": "2026-08-08T23:40:40.065Z",
+        "lastUpdated": "2026-08-31T12:56:59.506Z"
+      }
+    ],
+    "pdf@codebuddy-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\codebuddy-plugins-official\\pdf\\1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-08-08T23:40:41.556Z",
+        "lastUpdated": "2026-09-01T13:23:25.873Z"
+      }
+    ],
+    "pptx@codebuddy-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\codebuddy-plugins-official\\pptx\\unknown",
+        "version": "unknown",
+        "installedAt": "2026-08-08T23:40:42.048Z",
+        "lastUpdated": "2026-09-09T03:57:43.832Z"
+      }
+    ],
+    "xlsx@codebuddy-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\codebuddy-plugins-official\\xlsx\\unknown",
+        "version": "unknown",
+        "installedAt": "2026-08-08T23:40:42.819Z",
+        "lastUpdated": "2026-09-09T03:57:44.275Z"
+      }
+    ],
+    "docx@codebuddy-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\codebuddy-plugins-official\\docx\\unknown",
+        "version": "unknown",
+        "installedAt": "2026-08-08T23:40:42.930Z",
+        "lastUpdated": "2026-09-09T03:57:44.740Z"
+      }
+    ],
+    "document-skills@cb_teams_marketplace": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\cb_teams_marketplace\\document-skills\\1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-08-08T23:40:43.808Z",
+        "lastUpdated": "2026-09-01T13:49:34.654Z"
+      }
+    ],
+    "welcomemode-code@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\welcomemode-code\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:33.025Z"
+      }
+    ],
+    "welcomemode-work@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\welcomemode-work\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:33.091Z"
+      }
+    ],
+    "welcomemode-design@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\welcomemode-design\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:33.188Z"
+      }
+    ],
+    "interactionmode-craft@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\interactionmode-craft\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:33.325Z"
+      }
+    ],
+    "interactionmode-ask@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\interactionmode-ask\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:33.418Z"
+      }
+    ],
+    "interactionmode-plan@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\interactionmode-plan\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:33.493Z"
+      }
+    ],
+    "interactionmode-expert@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\interactionmode-expert\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:33.593Z"
+      }
+    ],
+    "prompt-common@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\prompt-common\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:33.644Z"
+      }
+    ],
+    "skill-ardot-design-core@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-ardot-design-core\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:33.767Z"
+      }
+    ],
+    "skill-expert-manager@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-expert-manager\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:33.869Z"
+      }
+    ],
+    "skill-wb-finance-skill@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-wb-finance-skill\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:34.149Z"
+      }
+    ],
+    "skill-ardot-poster@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-ardot-poster\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:34.206Z"
+      }
+    ],
+    "skill-marketplace-skill-installer@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-marketplace-skill-installer\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:34.360Z"
+      }
+    ],
+    "skill-recommend-connectors@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-recommend-connectors\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:34.415Z"
+      }
+    ],
+    "skill-recommend-experts@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-recommend-experts\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:34.485Z"
+      }
+    ],
+    "skill-ardot-design-router@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-ardot-design-router\\0.1.1",
+        "version": "0.1.1",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-08-08T23:40:50.570Z"
+      }
+    ],
+    "skill-ardot-design-to-code@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-ardot-design-to-code\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:34.609Z"
+      }
+    ],
+    "skill-buddy-multimodal-generation@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-buddy-multimodal-generation\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:34.668Z"
+      }
+    ],
+    "skill-ardot-ui-design@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-ardot-ui-design\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:34.803Z"
+      }
+    ],
+    "skill-skill-creator@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-skill-creator\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:34.868Z"
+      }
+    ],
+    "skill-cloudstudio-deploy@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-cloudstudio-deploy\\0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-08-08T23:40:50.570Z"
+      }
+    ],
+    "skill-ardot-slides@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-ardot-slides\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:34.985Z"
+      }
+    ],
+    "skill-geo-map-compliance-guard@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-geo-map-compliance-guard\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:35.036Z"
+      }
+    ],
+    "skill-library@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-library\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:35.443Z"
+      }
+    ],
+    "skill-tencent-docs-routing@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-tencent-docs-routing\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:35.496Z"
+      }
+    ],
+    "skill-tencent-local-office-edit@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-tencent-local-office-edit\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:35.566Z"
+      }
+    ],
+    "mcp-ardot-mcp-app@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\mcp-ardot-mcp-app\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:35.984Z"
+      }
+    ],
+    "weixinpay@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\weixinpay\\1.6.109",
+        "version": "1.6.109",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-02T06:53:21.030Z"
+      }
+    ],
+    "tencent-docs-plugin@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\tencent-docs-plugin\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:36.314Z"
+      }
+    ],
+    "sheetagent@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\sheetagent\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:36.530Z"
+      }
+    ],
+    "tencent-pptx@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\tencent-pptx\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:36.684Z"
+      }
+    ],
+    "tencent-docx@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\tencent-docx\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-08-08T23:40:50.570Z",
+        "lastUpdated": "2026-09-04T09:26:37.404Z"
+      }
+    ],
+    "skill-livestream-poster@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-livestream-poster\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-09-02T06:52:57.461Z",
+        "lastUpdated": "2026-09-04T09:26:34.307Z"
+      }
+    ],
+    "skill-design-router@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-design-router\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-09-02T06:52:58.634Z",
+        "lastUpdated": "2026-09-04T09:26:34.538Z"
+      }
+    ],
+    "skill-buddy-image-processing@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-buddy-image-processing\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-09-02T06:53:06.884Z",
+        "lastUpdated": "2026-09-04T09:26:34.734Z"
+      }
+    ],
+    "skill-sites@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-sites\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-09-02T06:53:07.501Z",
+        "lastUpdated": "2026-09-04T09:26:34.921Z"
+      }
+    ],
+    "skill-miora-creative-core@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-miora-creative-core\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-09-02T06:53:12.069Z",
+        "lastUpdated": "2026-09-04T09:26:35.632Z"
+      }
+    ],
+    "skill-miora-brand-design@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-miora-brand-design\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-09-02T06:53:12.278Z",
+        "lastUpdated": "2026-09-04T09:26:35.704Z"
+      }
+    ],
+    "skill-miora-image-generation@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-miora-image-generation\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-09-02T06:53:15.706Z",
+        "lastUpdated": "2026-09-04T09:26:35.775Z"
+      }
+    ],
+    "skill-miora-video-generation@workbuddy-builtin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\workbuddy-builtin\\skill-miora-video-generation\\5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "version": "5.5.3-wb.37748631.g104760a2.h1a8f7c37fe76",
+        "installedAt": "2026-09-02T06:53:19.070Z",
+        "lastUpdated": "2026-09-04T09:26:35.844Z"
+      }
+    ],
+    "mt5-ea-expert@experts": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\experts\\mt5-ea-expert\\1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-09-02T06:53:26.879Z",
+        "lastUpdated": "2026-09-02T06:53:26.879Z"
+      }
+    ],
+    "goldstrategy-guild@my-experts": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\my-experts\\goldstrategy-guild\\4.0.0",
+        "version": "4.0.0",
+        "installedAt": "2026-09-02T06:53:27.087Z",
+        "lastUpdated": "2026-09-02T06:53:27.087Z"
+      }
+    ],
+    "physics-omnibus@my-experts": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\my-experts\\physics-omnibus\\1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-09-02T06:53:27.120Z",
+        "lastUpdated": "2026-09-02T06:53:27.120Z"
+      }
+    ],
+    "it-edu-team@my-experts": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\my-experts\\it-edu-team\\6.0.0",
+        "version": "6.0.0",
+        "installedAt": "2026-09-02T06:53:27.179Z",
+        "lastUpdated": "2026-09-02T06:53:27.179Z"
+      }
+    ],
+    "tianji-ge@my-experts": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\my-experts\\tianji-ge\\2.1.0",
+        "version": "2.1.0",
+        "installedAt": "2026-09-02T06:53:27.441Z",
+        "lastUpdated": "2026-09-02T06:53:27.441Z"
+      }
+    ],
+    "education-admin@my-experts": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\my-experts\\education-admin\\5.0.0",
+        "version": "5.0.0",
+        "installedAt": "2026-09-02T06:53:28.061Z",
+        "lastUpdated": "2026-09-02T06:53:28.061Z"
+      }
+    ],
+    "suan-jing-ge@my-experts": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\my-experts\\suan-jing-ge\\2.0.0",
+        "version": "2.0.0",
+        "installedAt": "2026-09-06T07:29:23.000Z",
+        "lastUpdated": "2026-09-06T07:29:23.000Z"
+      }
+    ],
+    "qihuang-medical@my-experts": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\my-experts\\qihuang-medical\\2.0.0",
+        "version": "2.0.0",
+        "installedAt": "2026-09-06T07:29:23.000Z",
+        "lastUpdated": "2026-09-06T07:29:23.000Z"
+      }
+    ],
+    "finance-data@cb_teams_marketplace": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\ASUS\\.workbuddy\\plugins\\cache\\cb_teams_marketplace\\finance-data\\1.5.0",
+        "version": "1.5.0",
+        "installedAt": "2026-09-08T23:47:58.160Z",
+        "lastUpdated": "2026-09-08T23:47:58.160Z"
+      }
+    ]
+  }
+}

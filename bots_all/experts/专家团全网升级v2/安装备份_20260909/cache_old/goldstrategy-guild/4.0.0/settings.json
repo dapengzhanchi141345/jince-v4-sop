@@ -1,0 +1,5 @@
+{
+  "openaiClientConfig": {
+    "model": "agnes-2.0-flash"
+  }
+}

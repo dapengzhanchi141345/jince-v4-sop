@@ -1,0 +1,13 @@
+{
+  "bundle_hash": "sha256:f1584e527c69d06bd6eae3cabe9456f58970cfebecb3b140556cb14a62038159",
+  "scanner_version": "skills-guard-v10",
+  "source": "@ontoai/ai-self-awareness",
+  "source_url": "@ontoai/ai-self-awareness",
+  "trust_level": "community",
+  "verdict": "safe",
+  "findings": [],
+  "rules": [],
+  "scanned_at": "2026-11-15T12:05:04.701850+00:00",
+  "summary": "ai-self-awareness: clean scan, no threats detected",
+  "fresh": true
+}
