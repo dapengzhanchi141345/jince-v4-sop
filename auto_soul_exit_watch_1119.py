@@ -40,6 +40,19 @@ def main():
                 by_pos.setdefault(str(d.position_id), []).append(d)
         params = json.load(open(os.path.join(BASE, "auto_soul_params.json"), encoding="utf-8"))
         cells, default = params.get("cells", {}), params.get("default", {"sl_mult": 1.0, "tp_mult": 3.0})
+        # R-C8 扫描只跑一次(多票消失共享结果)
+        p2x = subprocess.run(["D:/jince_sass/.venv/Scripts/python.exe",
+                              os.path.join(ROOT, "research", "soul_scan_1119.py")],
+                             capture_output=True, text=True, timeout=300, cwd=ROOT)
+        scan_all = {}
+        try:
+            scan_all = json.load(open(os.path.join(BASE, "soul_scan_1119.json"), encoding="utf-8"))
+        except Exception:
+            pass
+        import sys
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import auto_soul_sweep_1119 as sw
+        reentered = 0
         for t, v in gone.items():
             ds = by_pos.get(t, [])
             close_price = ds[-1].price if ds else None
@@ -81,16 +94,8 @@ def main():
             except Exception:
                 pass
             if profit_side:
-                # 立即再进场: 重扫灵魂门, 同向信号仍有效且非冻结=当场市价再进(0.01同格)
-                p2 = subprocess.run([os.environ.get("JINCE_VENV", "D:/jince_sass/.venv/Scripts/python.exe"),
-                                     os.path.join(ROOT, "research", "soul_scan_1119.py")],
-                                    capture_output=True, text=True, timeout=300, cwd=ROOT)
-                scan = {}
-                try:
-                    scan = json.load(open(os.path.join(BASE, "soul_scan_1119.json"), encoding="utf-8"))
-                except Exception:
-                    pass
-                sig = next((s for s in scan.get("signals", []) if s.get("sym") == v["sym"]), None)
+                # R-C8: 扫描结果=loop前一次性跑好(scan_all), 多票共享
+                sig = next((s for s in scan_all.get("signals", []) if s.get("sym") == v["sym"]), None)
                 swp = (sig or {}).get("sweeps", {})
                 key = "UP" if side == "BUY" else "DN"
                 alive = bool(sig and swp.get(key, {}).get("passed") and swp.get(key, {}).get("recent")
@@ -111,6 +116,14 @@ def main():
                 if alive and not frozen and not any(c["sym"] == v["sym"] for c in cur.values()):
                     sym = v["sym"]
                     cell = cells.get(sym, default)
+                    # R-C3 每拍再进场上限1 (连环出场不连环开单)
+                    if reentered >= 1:
+                        line += " | 再进场额度本拍已用, 下拍覆盖"
+                        reports.append(line); continue
+                    # R-C4 闸对齐: D4尾龄 + 防磨平(与巡市哨同规则)
+                    if sw.m30_stale(sym) > 2.0:
+                        line += " | 数据尾龄>2h禁入(D4), 交巡市哨"
+                        reports.append(line); continue
                     try:
                         import numpy as np
                         m = np.load(os.path.join(ROOT, "data", "tf_cache", f"{sym}_M30.npz"))
@@ -118,8 +131,11 @@ def main():
                         pc3 = np.concatenate(([c3[0]], c3[:-1]))
                         tr = np.maximum(h - l, np.maximum(np.abs(h - pc3), np.abs(l - pc3)))
                         R = round(cell["sl_mult"] * float(tr[-15:].mean()), 6)
+                        si0 = mt5.symbol_info(sym)
+                        if si0 and si0.point and R / si0.point < 4 * max(si0.spread, si0.trade_tick_size / si0.point):
+                            raise ValueError(f"R<4×现点差防磨平(R={R/si0.point:.1f}点,点差{si0.spread}点)")
                     except Exception as ex:
-                        line += f" | 再进场跳过: 数据缺失({ex}) (巡市哨下拍覆盖)"
+                        line += f" | 再进场跳过: {ex} (巡市哨下拍覆盖)"
                         reports.append(line)
                         continue
                     tx = mt5.symbol_info_tick(sym)
@@ -137,6 +153,12 @@ def main():
                             "comment": "reentry-1119", "type_time": mt5.ORDER_TIME_GTC, "type_filling": ftype,
                             "deviation": 30, "position": 0, "sl": sl, "tp": tp})
                         if rr.retcode == 10009:
+                            time.sleep(3)
+                            chk = [p3 for p3 in (mt5.positions_get() or ()) if p3.ticket == rr.order]
+                            if not chk:
+                                line += f" | 再进场验收失败: 单{rr.order} 10009后未在账, P1取证"
+                                reports.append(line); continue
+                            reentered += 1
                             ts = dt.datetime.now().isoformat()
                             for ff, row in (("order_lifecycle.jsonl", {"ev": "place", "ts": ts, "sym": sym, "side": side, "vol": 0.01,
                                 "price": px, "sl": sl, "tp": tp, "magic": MAGIC, "wave": "reentry-1119", "params_ver": cell.get("src", "default攒样"),

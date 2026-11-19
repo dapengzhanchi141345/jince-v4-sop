@@ -55,6 +55,26 @@ def atr30(sym):
 def main():
     now = dt.datetime.now()
     reports = []
+    # R1-A4 冻结窗滚动: 20:00-20:59 自动追加次日美数据窗(20:30-21:30 all), 不再靠手动
+    try:
+        fwf = os.path.join(BASE, "event_freeze_windows.json")
+        fw = load_json(fwf) or {"windows": []}
+        nxt = (now + dt.timedelta(days=1)).strftime("%Y-%m-%dT")
+        has_next = any(w.get("start", "").startswith(nxt + "20:30") for w in fw.get("windows", []))
+        if not has_next and (20 <= now.hour < 21 or now.hour == 19):
+            fw.setdefault("windows", []).append({"start": nxt + "20:30:00+08:00", "end": nxt + "21:30:00+08:00",
+                                                  "scope": "all", "note": "美数据窗(巡市哨每日自动滚动, 晨学哨可加窄)"})
+            json.dump(fw, open(fwf, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+            reports.append(f"[冻结窗] 已自动追加 {nxt[:10]} 美数据窗 20:30-21:30")
+    except Exception:
+        pass
+    # R1-A1 数据自鲜: 参考品种(BTC)M30尾龄>45min → 先跑数据官刷新再扫
+    if m30_stale("BTCUSD") > 0.75:
+        p0 = subprocess.run([PY313, os.path.join(ROOT, "jince_data_officer.py")],
+                            capture_output=True, text=True, timeout=240, cwd=ROOT)
+        time.sleep(8)
+        if p0.returncode != 0:
+            reports.append(f"[数据官刷新失败 rc={p0.returncode}] {(p0.stderr or '').strip()[-150:]} (D4尾龄闸兜底)")
     # 0) 红线登记: 到期未处理 → 跑红线哨
     reg_f = os.path.join(BASE, "redline_registry.jsonl")
     regs = []
@@ -148,6 +168,12 @@ def main():
             "comment": WAVE, "type_time": mt5.ORDER_TIME_GTC, "type_filling": ftype,
             "deviation": 30, "position": 0, "sl": sl, "tp": tp})
         if r.retcode != 10009:
+            continue
+        time.sleep(3)
+        # R1-A2 开单验收: 10009≠在账, 3秒后positions_get确认
+        chk = [p3 for p3 in (mt5.positions_get() or ()) if p3.ticket == r.order]
+        if not chk:
+            reports.append(f"[验收失败] {sym} 单{r.order} 10009后3秒未在账, 立P1取证 (rc=10009 但位置缺失)")
             continue
         ts = now.isoformat()
         with open(os.path.join(BASE, "order_lifecycle.jsonl"), "a", encoding="utf-8") as f:
